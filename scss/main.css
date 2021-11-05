@@ -697,7 +697,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .kard {
-    height: 60rem;
+    height: 65rem;
   }
 }
 
@@ -730,7 +730,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .kard__side {
-    height: 60rem;
+    height: 65rem;
   }
 }
 

@@ -13,7 +13,7 @@
       }
 
       @include respond(phone) {
-            height: 60rem;
+            height: 65rem;
       }
 
       &__side {
@@ -36,7 +36,7 @@
             }
 
             @include respond(phone) {
-                  height: 60rem;
+                  height: 65rem;
             }
 
             &--front {
