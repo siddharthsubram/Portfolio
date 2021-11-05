@@ -12,20 +12,21 @@
       outline-offset: 1rem;
       transition: all 1s;
 
-      @include respond(tab-port) {
-            width: 30%;
-            height: 42rem;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-            background-size: cover;
-      }
-
-      @include respond(tab-land) {
-            margin-left: 5rem;
-            margin: 0 auto;
-      }
-
       &__me {
+            @include respond(tab-port) {
+                  position: relative;
+                  width: 50%;
+                  height: 30rem;
+                  margin: 0 auto;
+                  //top: -30%;
+                  background-position: 10% 20%;
+            }
+
+            @include respond(tab-land) {
+                  margin-left: 5rem;
+                  margin: 0 auto;
+            }
+
             background-image: linear-gradient(
                         to right bottom,
                         rgba($color-bluegreen-darkest, 0.4),
@@ -64,10 +65,14 @@
                         url(../img/blueLock.jpg);
                   outline: 1rem solid $color-bluegreen-darker;
             }
+
             @include respond(tab-land) {
-                  //margin-left: 5rem;
+                  width: 50%;
+                  height: 40rem;
                   margin: 0 auto;
-                  width: 70%;
+                  background-size: cover;
+
+                  transform: translateY(3rem);
             }
 
             @include respond(tab-port) {
@@ -82,13 +87,10 @@
                   transform: translateY(3rem);
             }
 
-            @include respond(tab-land) {
-                  width: 50%;
-                  height: 40rem;
-                  margin: 0 auto;
-                  background-size: cover;
-
-                  transform: translateY(3rem);
+            @include respond(phone) {
+                  width: 60%;
+                  height: 35rem;
+                  margin-top: -5rem;
             }
       }
 

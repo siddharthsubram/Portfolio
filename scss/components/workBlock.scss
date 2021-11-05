@@ -98,6 +98,11 @@
             margin: 0 auto;
             padding-right: 1rem;
 
+            &__text {
+                  padding-left: 1rem;
+                  padding-right: 1rem;
+            }
+
             .workPoints {
                   list-style: none;
                   padding: 1rem;
@@ -109,6 +114,10 @@
                   display: inline-block;
                   width: -1em;
                   margin-left: 0em;
+            }
+
+            @include respond(tab-port) {
+                  padding: 1rem;
             }
       }
 }
