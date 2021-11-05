@@ -1,0 +1,115 @@
+.info-pictures {
+      width: 80%;
+      border-radius: 2rem;
+      position: center;
+      background-size: cover;
+      height: 45rem;
+      box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+      background-blend-mode: screen;
+      margin-top: 4rem;
+
+      background-position: center;
+      outline-offset: 1rem;
+      transition: all 1s;
+
+      @include respond(tab-port) {
+            width: 30%;
+            height: 42rem;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            background-size: cover;
+      }
+
+      @include respond(tab-land) {
+            margin-left: 5rem;
+            margin: 0 auto;
+      }
+
+      &__me {
+            background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-bluegreen-darkest, 0.4),
+                        rgba($color-bluegreen-darker, 0.4)
+                  ),
+                  url(../img/me-but-taller.jpg);
+
+            &:hover {
+                  transform: scale(1.1);
+                  background-image: linear-gradient(
+                              to right bottom,
+                              rgba($color-bluegreen-darkest, 0),
+                              rgba($color-bluegreen-darker, 0)
+                        ),
+                        url(../img/me-but-taller.jpg);
+                  outline: 1rem solid $color-bluegreen-darker;
+            }
+      }
+
+      &__blueLock {
+            width: 100%;
+            background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-bluegreen-darkest, 0.4),
+                        rgba($color-bluegreen-darker, 0.4)
+                  ),
+                  url(../img/blueLock.jpg);
+
+            &:hover {
+                  transform: scale(1.1);
+                  background-image: linear-gradient(
+                              to right bottom,
+                              rgba($color-bluegreen-darkest, 0),
+                              rgba($color-bluegreen-darker, 0)
+                        ),
+                        url(../img/blueLock.jpg);
+                  outline: 1rem solid $color-bluegreen-darker;
+            }
+            @include respond(tab-land) {
+                  //margin-left: 5rem;
+                  margin: 0 auto;
+                  width: 70%;
+            }
+
+            @include respond(tab-port) {
+                  width: 30%;
+                  height: 42rem;
+                  margin: 0 auto;
+                  top: 100%;
+                  //margin-top: 5rem;
+                  //margin-bottom: 2rem;
+                  background-size: cover;
+
+                  transform: translateY(3rem);
+            }
+
+            @include respond(tab-land) {
+                  width: 50%;
+                  height: 40rem;
+                  margin: 0 auto;
+                  background-size: cover;
+
+                  transform: translateY(3rem);
+            }
+      }
+
+      &__dbUniform {
+            width: 100%;
+            background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-bluegreen-darkest, 0.4),
+                        rgba($color-bluegreen-darker, 0.4)
+                  ),
+                  url(../img/uniform.jpg);
+
+            &:hover {
+                  transform: scale(1.1);
+                  background-image: linear-gradient(
+                              to right bottom,
+                              rgba($color-bluegreen-darkest, 0),
+                              rgba($color-bluegreen-darker, 0)
+                        ),
+                        url(../img/uniform.jpg);
+                  outline: 1rem solid $color-bluegreen-darker;
+            }
+      }
+}

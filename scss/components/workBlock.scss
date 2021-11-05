@@ -1,0 +1,130 @@
+.expHolder {
+      @include clearfix;
+      margin: 0 auto;
+      background-color: rgba($color-cyanBlue-dark, 0.6);
+      padding: 0.5rem;
+      font-size: $text-size;
+      z-index: 800;
+      opacity: 0;
+      clip-path: polygon(7% 0, 93% 0, 99% 50%, 93% 100%, 7% 100%, 1% 50%);
+      //animation: appearDownwards 2s ease-out 1s forwards;
+      border: 1rem solid $color-bluegreen-2;
+
+      @include respond(tab-port) {
+            clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+            width: 90%;
+      }
+
+      &__leftSide {
+            @include clearfix;
+            width: 100%;
+            margin: 0 auto;
+            margin-right: 5rem;
+            &__image {
+                  position: relative;
+                  margin: 0 auto;
+                  margin-top: 5rem;
+                  margin-left: 7rem;
+                  transform: scale(1.5);
+                  border: 0.5rem solid $color-bluegreen-darker;
+                  border-radius: 50%;
+                  transition: all 0.5s;
+                  &:hover {
+                        transform: scale(1.6);
+                        box-shadow: 0 1rem 1.5rem rgba(black, 0.3);
+                  }
+
+                  &__3 {
+                        margin-top: 3.5rem;
+                  }
+                  &__2 {
+                        margin-top: 4rem;
+                  }
+
+                  &__4 {
+                        transform: scale(1.5);
+                  }
+
+                  @include respond(tab-port) {
+                        position: relative;
+                        top: 80%;
+                        left: 30%;
+                        &:hover {
+                              transform: scale(0.7);
+                              box-shadow: 0 1rem 1.5rem rgba(black, 0.3);
+                        }
+                        &__1 {
+                              transform: translate(-50%, -20%) scale(1);
+                        }
+                        &__2 {
+                              transform: translate(-50%, -20%) scale(1);
+                        }
+                        &__3 {
+                              transform: translate(-50%, -20%) scale(1);
+                        }
+
+                        &__4 {
+                              transform: translate(-50%, -25%) scale(1);
+                        }
+                  }
+
+                  @include respond(phone) {
+                        position: relative;
+                        top: 80%;
+                        left: 30%;
+
+                        &:hover {
+                              transform: scale(0.5);
+                              box-shadow: 0 1rem 1.5rem rgba(black, 0.3);
+                        }
+                        &__1 {
+                              transform: translate(-50%, -20%) scale(1);
+                        }
+                        &__2 {
+                              transform: translate(-50%, -20%) scale(1);
+                        }
+                        &__3 {
+                              transform: translate(-50%, -20%) scale(1);
+                        }
+
+                        &__4 {
+                              transform: translate(-50%, -25%) scale(1);
+                        }
+                  }
+            }
+      }
+      &__rightSide {
+            width: 100%;
+            margin: 0 auto;
+            padding-right: 1rem;
+
+            .workPoints {
+                  list-style: none;
+                  padding: 1rem;
+            }
+            ul li::before {
+                  content: "\2022";
+                  color: $color-bluegreen-darker;
+                  font-weight: bold;
+                  display: inline-block;
+                  width: -1em;
+                  margin-left: 0em;
+            }
+      }
+}
+
+//Animations
+@keyframes appearDownwards {
+      0% {
+            opacity: 0;
+            transform: translateY(-30rem);
+      }
+      80% {
+            opacity: 0.9;
+            transform: translateY(1rem);
+      }
+      100% {
+            opacity: 1;
+            transform: translateY(0rem);
+      }
+}

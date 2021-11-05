@@ -1,0 +1,378 @@
+.kard {
+      //functionality
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: relative;
+      height: 53rem;
+      @include respond(tab-land) {
+            height: 48rem;
+      }
+
+      @include respond(tab-port) {
+            height: 87rem;
+      }
+
+      &__side {
+            height: 53rem;
+            transition: all 0.8s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            backface-visibility: hidden;
+            overflow: hidden;
+            box-shadow: 0 1.5rem 4rem rgba(black, 0.3);
+
+            @include respond(tab-land) {
+                  height: 48rem;
+            }
+
+            @include respond(tab-port) {
+                  height: 87rem;
+            }
+
+            &--front {
+                  border-radius: 1.5rem;
+
+                  &--1 {
+                        background-color: $color-pastelRed;
+                        border: 1rem solid $color-pastelRed-dark;
+                  }
+                  &--2 {
+                        background-color: $color-pastelGreen-light;
+                        border: 1rem solid $color-pastelGreen-dark;
+                  }
+                  &--3 {
+                        background-color: $color-pastelViolet-light;
+                        border: 1rem solid $color-pastelViolet-dark;
+                  }
+                  @include respond(tab-port) {
+                        border-width: 2rem;
+                  }
+            }
+            &--back {
+                  transform: rotateY(-180deg);
+                  background-image: repeating-radial-gradient(
+                        $color-pastelPink,
+                        $color-pastelBlue
+                  );
+
+                  border-radius: 1.5rem;
+                  &--1 {
+                        border: 1rem solid $color-pastelRed-darker;
+                  }
+                  &--2 {
+                        border: 1rem solid $color-pastelGreen-darkest;
+                  }
+                  &--3 {
+                        border: 1rem solid $color-pastelViolet-darkest;
+                  }
+            }
+      }
+      &:hover &__side--front {
+            transform: rotateY(180deg);
+      }
+
+      &:hover &__side--back {
+            transform: rotateY(0deg);
+      }
+      //front side styling
+      &__heading {
+            margin-top: 0.2rem;
+            width: 100%;
+
+            text-align: center;
+            position: relative;
+            font-size: $text-size;
+
+            font-weight: 300;
+            text-transform: uppercase;
+
+            @include respond(tab-land) {
+                  font-size: $text-smallest;
+            }
+
+            @include respond(tab-port) {
+                  margin-top: 1.8rem;
+                  font-weight: 600;
+                  font-size: 2.2rem;
+            }
+
+            &--1 {
+                  color: $color-pastelRed-darkest;
+            }
+            &--2 {
+                  color: $color-pastelGreen-darkest;
+            }
+            &--3 {
+                  color: $color-pastelViolet-darkest;
+            }
+      }
+      &__picture {
+            position: relative;
+
+            border-radius: 1rem;
+            background-size: cover;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            height: 22rem;
+            background-blend-mode: screen;
+            @include respond(tab-land) {
+                  height: 20rem;
+            }
+
+            &--1 {
+                  border: 1rem solid $color-pastelRed-dark;
+                  background-image: url(../img/genderWageIcon.jpg);
+            }
+            &--2 {
+                  border: 1rem solid $color-pastelGreen-dark;
+                  background-image: url(../img/triangle.jpg);
+            }
+            &--3 {
+                  border: 1rem solid $color-pastelViolet-dark;
+                  background-image: url(../img/yelp.jpg);
+            }
+
+            @include respond(tab-port) {
+                  height: 35rem;
+                  border-width: 2rem;
+            }
+      }
+      &__type {
+            position: relative;
+            margin: 0 auto;
+            margin-top: 1rem;
+            width: 80%;
+            height: 3rem;
+            padding: 0.3rem;
+            text-align: center;
+            font-size: $text-size;
+
+            @include respond(tab-land) {
+                  font-size: $text-small;
+            }
+            @include respond(tab-port) {
+                  margin-top: 1.5rem;
+                  height: 4rem;
+                  font-size: 2.4rem;
+            }
+
+            &--1 {
+                  background-color: $color-pastelRed-darker;
+                  color: $color-pastelRed;
+            }
+            &--2 {
+                  background-color: $color-pastelGreen-darkest;
+                  color: $color-pastelGreen-light;
+            }
+            &--3 {
+                  background-color: $color-pastelViolet-darkest;
+                  color: $color-pastelViolet-light;
+            }
+      }
+      &__desc {
+            //margin: 1rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            font-size: 1.2rem;
+            margin-bottom: 0rem;
+            &--1 {
+                  color: $color-pastelRed-darkest;
+            }
+            &--2 {
+                  color: $color-pastelGreen-darkest;
+            }
+            &--3 {
+                  color: $color-pastelViolet-darkest;
+            }
+            @include respond(tab-land) {
+                  font-size: 1.1rem;
+            }
+            @include respond(tab-port) {
+                  padding: 2rem;
+                  font-size: 2rem;
+            }
+      }
+      &__details {
+            ul {
+                  list-style: none;
+                  width: 80%;
+                  margin: 0 auto;
+                  margin-top: 0rem;
+                  //margin-bottom: 2rem;
+                  @include respond(tab-port) {
+                        margin-top: -1rem;
+                  }
+            }
+      }
+
+      &__listStyle {
+            text-align: center;
+            font-size: $text-size;
+            padding: 0.75rem;
+            @include respond(tab-land) {
+                  font-size: $text-smallest;
+            }
+            @include respond(tab-port) {
+                  margin-top: -1rem;
+                  font-size: 2.8rem;
+                  padding: 1rem;
+                  padding-top: 1rem;
+            }
+
+            &--1 {
+                  color: $color-pastelRed-darkest;
+                  &:not(:last-child) {
+                        border-bottom: 1px solid $color-pastelRed-darkest;
+                  }
+            }
+            &--2 {
+                  color: $color-pastelGreen-darkest;
+                  &:not(:last-child) {
+                        border-bottom: 1px solid $color-pastelGreen-darkest;
+                  }
+            }
+            &--3 {
+                  color: $color-pastelViolet-darkest;
+                  &:not(:last-child) {
+                        border-bottom: 1px solid $color-pastelViolet-darkest;
+                  }
+            }
+      }
+
+      &__backContent {
+            width: 80%;
+            height: 36rem;
+            border-radius: 1rem;
+            padding: 0.25rem;
+
+            margin: 0 auto;
+            margin-top: 5rem;
+
+            border: 0.5rem solid $color-pastelRed-darker;
+
+            &__1 {
+                  border-color: $color-pastelRed-darker;
+                  background-color: $color-pastelRed;
+                  color: $color-pastelRed-darkest;
+            }
+            &__2 {
+                  border-color: $color-pastelGreen-darkest;
+                  background-color: $color-pastelGreen-light;
+                  color: $color-pastelGreen-darkest;
+            }
+            &__3 {
+                  border-color: $color-pastelViolet-darkest;
+                  background-color: $color-pastelViolet-light;
+                  color: $color-pastelViolet-darkest;
+            }
+
+            background-color: $color-pastelRed;
+            color: $color-pastelRed-darkest;
+            @include respond(tab-land) {
+                  margin-top: 2.5rem;
+                  height: 33rem;
+            }
+            @include respond(tab-port) {
+                  margin-top: 4rem;
+                  height: 65rem;
+            }
+            &__text {
+                  text-align: left;
+                  font-size: 1.2rem;
+                  padding: 1rem;
+                  @include respond(tab-land) {
+                        font-size: 1.1rem;
+                  }
+                  @include respond(tab-port) {
+                        padding: 0.5rem;
+                        font-size: 2.2rem;
+                  }
+                  @include respond(phone) {
+                        padding: 0.3rem;
+                        font-size: 1.8rem;
+                  }
+            }
+      }
+
+      &__workLink {
+            height: 5rem;
+            width: 80%;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0.3rem;
+            border-radius: 3rem;
+            font-size: $text-size;
+            font-weight: 800;
+            text-align: center;
+
+            @include respond(tab-port) {
+                  height: 10rem;
+                  font-size: 3rem;
+            }
+
+            &:link,
+            &:visited {
+                  border: 0.5rem solid $color-pastelRed-darker;
+                  background-color: $color-pastelRed;
+                  color: $color-pastelRed-darker;
+            }
+            &:hover {
+                  background-color: $color-pastelRed-darker;
+                  border-color: $color-pastelRed;
+                  color: $color-pastelRed;
+            }
+
+            &--1 {
+                  border: 0.5rem solid $color-pastelRed-darker;
+                  background-color: $color-pastelRed;
+                  color: $color-pastelRed-darker;
+                  &:link,
+                  &:visited {
+                        border: 0.5rem solid $color-pastelRed-darker;
+                        background-color: $color-pastelRed;
+                        color: $color-pastelRed-darker;
+                  }
+                  &:hover {
+                        background-color: $color-pastelRed-darker;
+                        border-color: $color-pastelRed;
+                        color: $color-pastelRed;
+                  }
+            }
+            &--2 {
+                  background-color: $color-pastelGreen-light;
+                  border: 0.5rem solid $color-pastelGreen-darkest;
+                  color: $color-pastelGreen-darkest;
+                  &:link,
+                  &:visited {
+                        background-color: $color-pastelGreen-light;
+                        border: 0.5rem solid $color-pastelGreen-darkest;
+                        color: $color-pastelGreen-darkest;
+                  }
+                  &:hover {
+                        background-color: $color-pastelGreen-darkest;
+                        border-color: $color-pastelGreen-light;
+                        color: $color-pastelGreen-light;
+                  }
+            }
+            &--3 {
+                  background-color: $color-pastelViolet-light;
+                  border: 0.5rem solid $color-pastelViolet-darkest;
+                  color: $color-pastelViolet-darkest;
+                  &:link,
+                  &:visited {
+                        background-color: $color-pastelViolet-light;
+                        border: 0.5rem solid $color-pastelViolet-darkest;
+                        color: $color-pastelViolet-darkest;
+                  }
+                  &:hover {
+                        background-color: $color-pastelViolet-darkest;
+                        border-color: $color-pastelViolet-light;
+                        color: $color-pastelViolet-light;
+                  }
+            }
+      }
+}

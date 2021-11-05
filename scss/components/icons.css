@@ -1,0 +1,12 @@
+.emailIcon {
+  font-size: 6rem;
+  background-color: orangered;
+  /*background-image: linear-gradient(
+            to right,
+            $color-bluegreen-darker,
+            $color-pastelTeal
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;*/
+}

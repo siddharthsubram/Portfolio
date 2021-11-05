@@ -1,0 +1,11 @@
+.picture-bluelock {
+      @include clearfix;
+      background-color: aliceblue;
+      width: 80%;
+      height: 30rem;
+      transition: all 0.25s;
+}
+
+.picture-bluelock:hover {
+      transform: scale(2);
+}

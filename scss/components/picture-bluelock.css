@@ -1,0 +1,11 @@
+.picture-bluelock {
+  background-color: aliceblue;
+  width: 80%;
+  height: 30rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.picture-bluelock :hover {
+  background-color: red;
+}

@@ -1,0 +1,32 @@
+.button {
+      margin: 0 auto;
+      width: 10%;
+      border: 0.5rem solid $color-cyanBlue-dark;
+      border-radius: 3rem;
+      color: $color-cyanBlue-dark;
+      &:link,
+      &:visited {
+            font-size: $text-size;
+            background-color: $color-bluegreen-2;
+            padding: 3px;
+      }
+      &:hover {
+            background-color: $color-cyanBlue-dark;
+            color: $color-bluegreen-2;
+            border: 0.5rem solid $color-bluegreen-2;
+            box-shadow: 0 1rem 2rem rgba(black, 0.15);
+            transform: translateY(-2px) scale(1.1);
+      }
+      &:active {
+            box-shadow: 0 1rem 2rem rgba(black, 0.15);
+            transform: translateY(0) scale(1);
+      }
+
+      @include respond(tab-land) {
+            width: 15%;
+      }
+
+      @include respond(phone) {
+            width: 25%;
+      }
+}
