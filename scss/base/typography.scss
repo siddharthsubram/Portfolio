@@ -120,7 +120,7 @@ body {
       &__name {
             color: $color-bluegreen;
             //background-color: orangered;
-            display: block;
+            display: inline-block;
             font-size: 4rem;
             font-weight: 400;
             letter-spacing: 1.5rem;
@@ -135,7 +135,7 @@ body {
       &__intro {
             color: $color-cyanWhite;
             //background-color: orangered;
-            display: block;
+            display: inline-block;
             font-size: 3rem;
             font-weight: 400;
             letter-spacing: 1.5rem;
@@ -151,7 +151,7 @@ body {
       &__vis {
             padding-top: 2rem;
             color: $color-cyanWhite;
-            display: block;
+            display: inline-block;
             font-size: 3rem;
             font-weight: 400;
             letter-spacing: 1.3rem;
