@@ -162,14 +162,13 @@ body {
   text-transform: uppercase;
   display: block;
   font-weight: 400;
-  text-align: center;
 }
 
 .title__name {
   color: #227579;
-  display: inline-block;
+  background-color: orangered;
+  display: block;
   font-size: 4rem;
-  font-weight: 400;
   letter-spacing: 1.5rem;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
@@ -250,7 +249,7 @@ body {
   left: 50.5%;
   -webkit-transform: translate(-50%, -20%);
           transform: translate(-50%, -20%);
-  width: 90%;
+  text-align: center;
 }
 
 .text-box-bottom {
@@ -259,7 +258,7 @@ body {
   left: 51%;
   -webkit-transform: translate(-50%, -90%);
           transform: translate(-50%, -90%);
-  width: 90%;
+  text-align: center;
 }
 
 .margin-bottom-large {
@@ -286,8 +285,8 @@ body {
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0.1;
-    -webkit-transform: translateX(-20rem) rotate(5deg);
-            transform: translateX(-20rem) rotate(5deg);
+    -webkit-transform: translateX(-7rem) rotate(5deg);
+            transform: translateX(-7rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
@@ -304,8 +303,8 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0.1;
-    -webkit-transform: translateX(-20rem) rotate(5deg);
-            transform: translateX(-20rem) rotate(5deg);
+    -webkit-transform: translateX(-7rem) rotate(5deg);
+            transform: translateX(-7rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
@@ -322,8 +321,8 @@ body {
 @-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(20rem) rotate(5deg);
-            transform: translateX(20rem) rotate(5deg);
+    -webkit-transform: translateX(7rem) rotate(5deg);
+            transform: translateX(7rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
@@ -340,8 +339,8 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(20rem) rotate(5deg);
-            transform: translateX(20rem) rotate(5deg);
+    -webkit-transform: translateX(7rem) rotate(5deg);
+            transform: translateX(7rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
