@@ -118,12 +118,12 @@ body {
       font-weight: 400;
       &__name {
             color: $color-bluegreen;
-            background-color: orangered;
+            //background-color: orangered;
             display: block;
             font-size: 4rem;
             letter-spacing: 1.5rem;
-            animation-name: moveInLeft;
-            animation-duration: 3s;
+            //animation-name: moveInLeft;
+            //animation-duration: 3s;
 
             @include respond(phone) {
                   letter-spacing: 1rem;
@@ -137,8 +137,8 @@ body {
             font-size: 3rem;
             font-weight: 400;
             letter-spacing: 1.5rem;
-            animation-name: moveInRight;
-            animation-duration: 3s;
+            //animation-name: moveInRight;
+            //animation-duration: 3s;
             margin-bottom: 2rem;
 
             @include respond(phone) {
@@ -153,10 +153,10 @@ body {
             font-size: 3rem;
             font-weight: 400;
             letter-spacing: 1.3rem;
-            opacity: 0;
-            animation-name: moveInRight;
-            animation-delay: 0.5s;
-            animation-duration: 3s;
+            opacity: 1;
+            //animation-name: moveInRight;
+            //animation-delay: 0.5s;
+            //animation-duration: 3s;
             animation-fill-mode: forwards;
             @include respond(phone) {
                   letter-spacing: 0.8rem;
