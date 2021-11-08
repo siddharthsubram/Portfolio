@@ -1,8 +1,8 @@
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0.1;
-    -webkit-transform: translateX(-10rem) rotate(5deg);
-            transform: translateX(-10rem) rotate(5deg);
+    -webkit-transform: translateX(-10.5rem) rotate(5deg);
+            transform: translateX(-10.5rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
@@ -19,8 +19,8 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0.1;
-    -webkit-transform: translateX(-10rem) rotate(5deg);
-            transform: translateX(-10rem) rotate(5deg);
+    -webkit-transform: translateX(-10.5rem) rotate(5deg);
+            transform: translateX(-10.5rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
@@ -37,8 +37,8 @@
 @-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(10rem) rotate(5deg);
-            transform: translateX(10rem) rotate(5deg);
+    -webkit-transform: translateX(10.5rem) rotate(5deg);
+            transform: translateX(10.5rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
@@ -55,8 +55,8 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(10rem) rotate(5deg);
-            transform: translateX(10rem) rotate(5deg);
+    -webkit-transform: translateX(10.5rem) rotate(5deg);
+            transform: translateX(10.5rem) rotate(5deg);
   }
   70% {
     opacity: 0.8;
