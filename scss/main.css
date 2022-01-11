@@ -851,6 +851,23 @@ html {
      object-fit: cover;
 }
 
+.portfolioHolder {
+  border: 2.5rem solid #85c9c3;
+  border-radius: 2.5rem;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding-top: 20rem;
+}
+
 .kard {
   -webkit-perspective: 150rem;
           perspective: 150rem;
@@ -861,7 +878,7 @@ html {
 
 @media only screen and (max-width: 75em) {
   .kard {
-    height: 48rem;
+    height: 52rem;
   }
 }
 
@@ -894,7 +911,7 @@ html {
 
 @media only screen and (max-width: 75em) {
   .kard__side {
-    height: 48rem;
+    height: 52rem;
   }
 }
 
@@ -975,14 +992,14 @@ html {
   width: 100%;
   text-align: center;
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 @media only screen and (max-width: 75em) {
   .kard__heading {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -1025,7 +1042,7 @@ html {
 
 .kard__picture--1 {
   border: 1rem solid #ff9a95;
-  background-image: url(../img/genderWageIcon.JPG);
+  background-image: url(../img/genderWage2.PNG);
 }
 
 .kard__picture--2 {
@@ -1035,7 +1052,7 @@ html {
 
 .kard__picture--3 {
   border: 1rem solid #c59fe6;
-  background-image: url(../img/yelp.jpg);
+  background-image: url(../img/SJDB.png);
 }
 
 @media only screen and (max-width: 75em) {
@@ -1067,7 +1084,7 @@ html {
   height: 3rem;
   padding: 0.3rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -1110,9 +1127,11 @@ html {
 }
 
 .kard__desc {
+  margin-top: 0.5rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  font-family: sans-serif;
   margin-bottom: 0rem;
 }
 
@@ -1130,7 +1149,7 @@ html {
 
 @media only screen and (max-width: 75em) {
   .kard__desc {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -1169,20 +1188,20 @@ html {
 
 .kard__listStyle {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   padding: 0.75rem;
 }
 
 @media only screen and (max-width: 75em) {
   .kard__listStyle {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .kard__listStyle {
     margin-top: -1rem;
-    font-size: 2.8rem;
+    font-size: 1.5rem;
     padding: 1rem;
     padding-top: 1rem;
   }
@@ -1273,7 +1292,7 @@ html {
 
 .kard__backContent__text {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 
@@ -1286,7 +1305,7 @@ html {
 @media only screen and (max-width: 56.25em) {
   .kard__backContent__text {
     padding: 0.5rem;
-    font-size: 2.2rem;
+    font-size: 1rem;
   }
 }
 

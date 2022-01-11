@@ -1,3 +1,15 @@
+.portfolioHolder {
+      border: 2.5rem solid $color-cyanBlue-dark;
+      border-radius: 2.5rem;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      margin-bottom: 10rem;
+      padding-top: 20rem;
+}
+
 .kard {
       //functionality
       perspective: 150rem;
@@ -5,17 +17,14 @@
       position: relative;
       height: 53rem;
       @include respond(tab-land) {
-            height: 48rem;
+            height: 52rem;
       }
-
       @include respond(tab-port) {
             height: 87rem;
       }
-
       @include respond(phone) {
             height: 65rem;
       }
-
       &__side {
             height: 53rem;
             transition: all 0.8s ease;
@@ -28,7 +37,7 @@
             box-shadow: 0 1.5rem 4rem rgba(black, 0.3);
 
             @include respond(tab-land) {
-                  height: 48rem;
+                  height: 52rem;
             }
 
             @include respond(tab-port) {
@@ -95,13 +104,13 @@
 
             text-align: center;
             position: relative;
-            font-size: $text-size;
+            font-size: 1.4rem;
 
             font-weight: 300;
             text-transform: uppercase;
 
             @include respond(tab-land) {
-                  font-size: $text-smallest;
+                  font-size: 1.15rem;
             }
 
             @include respond(tab-port) {
@@ -137,7 +146,7 @@
 
             &--1 {
                   border: 1rem solid $color-pastelRed-dark;
-                  background-image: url(../img/genderWageIcon.JPG);
+                  background-image: url(../img/genderWage2.PNG);
             }
             &--2 {
                   border: 1rem solid $color-pastelGreen-dark;
@@ -145,7 +154,7 @@
             }
             &--3 {
                   border: 1rem solid $color-pastelViolet-dark;
-                  background-image: url(../img/yelp.jpg);
+                  background-image: url(../img/SJDB.PNG);
             }
 
             @include respond(tab-land) {
@@ -171,11 +180,11 @@
             height: 3rem;
             padding: 0.3rem;
             text-align: center;
-            font-size: $text-size;
+            font-size: 1.5rem;
             font-weight: 700;
 
             @include respond(tab-land) {
-                  font-size: $text-small;
+                  font-size: 1.5rem;
             }
             @include respond(tab-port) {
                   margin-top: 1.5rem;
@@ -203,9 +212,11 @@
       }
       &__desc {
             //margin: 1rem;
+            margin-top: 0.5rem;
             margin-left: 3rem;
             margin-right: 3rem;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
+            font-family: sans-serif;
             margin-bottom: 0rem;
             &--1 {
                   color: $color-pastelRed-darkest;
@@ -217,7 +228,7 @@
                   color: $color-pastelViolet-darkest;
             }
             @include respond(tab-land) {
-                  font-size: 1.1rem;
+                  font-size: 1rem;
             }
             @include respond(tab-port) {
                   padding: 2rem;
@@ -246,14 +257,14 @@
 
       &__listStyle {
             text-align: center;
-            font-size: $text-size;
+            font-size: 1.25rem;
             padding: 0.75rem;
             @include respond(tab-land) {
-                  font-size: $text-smallest;
+                  font-size: 1.15rem;
             }
             @include respond(tab-port) {
                   margin-top: -1rem;
-                  font-size: 2.8rem;
+                  font-size: 1.5rem;
                   padding: 1rem;
                   padding-top: 1rem;
             }
@@ -329,14 +340,14 @@
 
             &__text {
                   text-align: left;
-                  font-size: 1.2rem;
+                  font-size: 1rem;
                   padding: 1rem;
                   @include respond(tab-land) {
                         font-size: 1.1rem;
                   }
                   @include respond(tab-port) {
                         padding: 0.5rem;
-                        font-size: 2.2rem;
+                        font-size: 1rem;
                   }
                   @include respond(phone) {
                         padding: 0.3rem;
