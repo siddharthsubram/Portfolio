@@ -1052,7 +1052,7 @@ html {
 
 .kard__picture--3 {
   border: 1rem solid #c59fe6;
-  background-image: url(../img/SJDB.png);
+  background-image: url(../img/SJDB.PNG);
 }
 
 @media only screen and (max-width: 75em) {
@@ -1409,6 +1409,54 @@ html {
   background-color: #a270ce;
   border-color: #eadcf6;
   color: #eadcf6;
+}
+
+.button2 {
+  margin: 0 auto;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0.5rem solid #85c9c3;
+  border-radius: 3rem;
+  padding: 0.75rem;
+  font-size: 2rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+  color: #85c9c3;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .button2 {
+    font-size: 1.5rem;
+    width: 25%;
+  }
+}
+
+.button2:link, .button2:visited {
+  font-size: 1.7rem;
+  background-color: #2a8284;
+  padding: 3px;
+}
+
+.button2:hover {
+  background-color: #85c9c3;
+  color: #2a8284;
+  border: 0.5rem solid #2a8284;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px) scale(1.03);
+          transform: translateY(-2px) scale(1.03);
+}
+
+.button2:active {
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
 }
 
 .button {
