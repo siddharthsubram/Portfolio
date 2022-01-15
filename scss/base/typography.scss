@@ -230,7 +230,7 @@ html {
             font-weight: 400;
             letter-spacing: 1.5rem;
             animation-name: moveInLeft;
-            animation-delay: 0.3s;
+            //animation-delay: 0.3s;
             animation-duration: 3s;
             margin-bottom: 2rem;
             @include respond(phone) {
