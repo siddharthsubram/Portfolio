@@ -3,7 +3,7 @@
 }
 
 .redButton {
-      position:relative;
+      position: relative;
       width: 15%;
       font-size: 1rem;
       text-align: center;
@@ -291,7 +291,7 @@
                               margin: 1rem;
                               padding: 0.5rem;
                               cursor: pointer;
-
+                              position: relative;
                               @media (max-width: 750px) {
                                     font-size: 0.75rem;
                                     width: 80%;
