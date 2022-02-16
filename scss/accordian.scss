@@ -1,0 +1,204 @@
+.accordian {
+      font-family: "Open Sans", sans-serif;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      //border: 1px solid black;
+      margin: 0 auto;
+      margin-top: 5vh;
+
+      &--element {
+            width: 70%;
+            position: relative;
+            //margin: 20px 30px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            transition: all 0.5s;
+
+            @media (max-width: 1300px) {
+                  width: 75%;
+                  &:hover {
+                        width: 80%;
+                  }
+            }
+
+            @media (max-width: 1000px) {
+                  width: 85%;
+                  &:hover {
+                        width: 90%;
+                  }
+            }
+
+            @media (max-width: 600px) {
+                  width: 90%;
+                  &:hover {
+                        width: 95%;
+                  }
+            }
+
+            &:hover {
+                  cursor: pointer;
+                  width: 73%;
+                  & > .accordian--element--front {
+                        background-color: $color--lightGrey;
+                  }
+
+                  & > .accordian--element--answer--content {
+                        background-color: $color--lightGrey;
+                  }
+
+                  & > .accordian--element--answer {
+                        background-color: $color--lightGrey;
+                  }
+            }
+
+            &--front {
+                  border: 0.3rem solid $color--blueGreen;
+                  border-radius: 1rem;
+                  //padding-bottom: 20rem;
+
+                  display: flex;
+                  flex-direction: row;
+                  padding: 1rem;
+
+                  font-size: 2rem;
+                  @media (max-width: 1300px) {
+                        font-size: 1.5rem;
+                  }
+
+                  @media (max-width: 1000px) {
+                        font-size: 1.25rem;
+                  }
+
+                  @media (max-width: 600px) {
+                        font-size: 0.75rem;
+                  }
+                  &:hover {
+                        background-color: $color--lightGrey;
+                  }
+                  &--name {
+                        //border: 0.2rem solid $color--blueGreen;
+                        flex: 0 0 35%;
+                        text-align: left;
+                        color: $color--blueGreen;
+                  }
+                  &--year {
+                        color: $color--redPurple;
+                        flex: 1 1 20%;
+                        text-align: Right;
+                  }
+                  &--desc {
+                        text-align: left;
+                        padding-left: 1rem;
+                        padding-top: 0.25rem;
+
+                        flex: 1 1 50%;
+                        color: $color--yellowOrange;
+                  }
+            }
+            &--answer {
+                  position: relative;
+                  background-color: white;
+                  border: 0.3rem solid $color--blueGreen;
+                  border-radius: 1rem;
+                  color: black;
+                  opacity: 0;
+                  height: 0;
+                  overflow: hidden;
+
+                  //padding:2rem;
+                  transition: 0.5s;
+                  text-transform: none;
+            }
+            &.active {
+                  .accordian--element--answer {
+                        background-color: $color--lightGrey;
+                        height: auto;
+                        padding: 1rem;
+                        padding-top: 0.25rem;
+                        font-size: 2rem;
+
+                        opacity: 1;
+                        border-top-right-radius: 0rem;
+                        border-top-left-radius: 0rem;
+                        border-top: none;
+
+                        &--content {
+                              padding: 0.25rem;
+                              //border: 1px solid black;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              justify-content: space-between;
+                              font-size: 1.5rem;
+
+                              @media (max-width: 1300px) {
+                                    font-size: 1.5rem;
+                              }
+
+                              @media (max-width: 1000px) {
+                                    font-size: 1.25rem;
+                              }
+
+                              @media (max-width: 600px) {
+                                    font-size: 0.75rem;
+                              }
+
+                              &--link {
+                                    //align-self: flex-start;
+                                    text-align: center;
+                                    width: 95%;
+                                    //margin-left: 3rem;
+
+                                    text-decoration: none;
+                                    color: $color--blueGreen;
+                                    padding: 0rem;
+                                    padding-bottom: 1rem;
+                                    cursor: pointer;
+                              }
+                              &--desc {
+                                    width: 95%;
+                                    //margin-top: 5rem;
+                                    padding-bottom: 0.75rem;
+                                    border-bottom: 2px solid $color--blueGreen;
+                              }
+                              //border: 1px solid green;
+                              &--list {
+                                    //border: 1px solid black;
+                                    list-style: none;
+                                    width: 85%;
+                                    margin: 0 auto;
+                                    &--elem {
+                                          &:before {
+                                                content: "\2022";
+                                                color: $color--fadedGreen;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                          }
+                                    }
+                              }
+                        }
+
+                        & > {
+                              margin: 0.5rem 0 0.5rem 0;
+                              padding: 0.5rem;
+                              //border: 1px solid black;
+                        }
+                  }
+
+                  .accordian--element--front {
+                        transition: 0.5s;
+                        opacity: 1;
+                        background-color: $color--lightGrey;
+                        border-bottom-left-radius: 0rem;
+                        border-bottom-right-radius: 0rem;
+                        border-bottom: none;
+                  }
+            }
+      }
+}

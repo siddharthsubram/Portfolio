@@ -1,0 +1,287 @@
+.page {
+      font-family: "Libre Franklin", sans-serif;
+      background-color: #ffffff;
+      margin: 0 auto;
+      //border: 1px solid black;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 80%;
+      //padding: 1.5rem;
+      @media (max-width: $laptop) {
+            width: 80%;
+            padding: 1rem;
+      }
+      @media (max-width: $tablet) {
+            width: 90%;
+            padding: 0.5rem;
+      }
+      @media (max-width: $bigPhone) {
+            width: 95%;
+            padding: 0.25rem;
+      }
+
+      &__vid {
+            //border: 1px solid black;
+            //border-radius: 1rem;
+
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            &__src {
+                  margin: 0 auto;
+                  border-radius: 2rem;
+                  max-width: 100%;
+                  background-size: cover;
+            }
+      }
+
+      &__back {
+            width: 100%;
+            //border: 1px solid black;
+            font-size: 3rem;
+            font-style: italic;
+
+            text-align: left;
+            margin-bottom: 5rem;
+            transition: all 0.5s;
+            &:hover {
+                  font-size: 3.1rem;
+                  font-weight: 1000;
+                  transform: translateY(-1rem);
+            }
+      }
+
+      &__hero {
+            width: 100%;
+            margin: 0 auto;
+            height: auto;
+            padding: 0rem;
+            //border: 1px solid black;
+            &__src {
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  max-width: 100%;
+                  object-fit: contain;
+            }
+
+            &__second {
+                  margin-bottom: 5rem;
+            }
+      }
+
+      &__title {
+            width: 100%;
+            text-align: center;
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin: 0 auto;
+            //border-bottom: 2.5px solid $SJSU--3;
+            margin-top: 2rem;
+            letter-spacing: 0.75rem;
+            color: $SJSU--primary;
+            //border: 1px solid black;
+            &__sub {
+                  font-size: 3rem;
+            }
+
+            margin-bottom: 5rem;
+
+            &__subheading {
+                  width: 90%;
+                  font-size: 2.5rem;
+                  color: $SJSU--secondary;
+            }
+      }
+
+      &__overView {
+            display: flex;
+            flex-direction: column;
+            color: $SJSU--primary;
+
+            width: 100%;
+
+            & > * {
+                  margin-bottom: 5rem;
+            }
+            &__teamMembers {
+                  width: 70%;
+                  margin: 0 auto;
+                  //border: 1px solid red;
+                  display: flex;
+                  margin-top: 1rem;
+                  flex-wrap: wrap;
+
+                  justify-content: space-evenly;
+                  align-items: flex-start;
+                  &__item {
+                        display: flex;
+                        flex-direction: column;
+
+                        //padding: 0.5;
+                        max-width: 15rem;
+                        //border: 1px solid red;
+
+                        &__picture {
+                              //border: 1px soild red;
+                              padding-left: 3rem;
+                              padding-right: 3rem;
+
+                              &__src {
+                                    // border: 10px soild red;
+                                    // padding: 1rem;
+                                    // margin: 0 auto;
+                                    border-radius: 10rem;
+                                    max-width: 100%;
+                                    object-fit: contain;
+                                    background-position: center center;
+                                    margin: 0 auto;
+                              }
+                        }
+                        &__roles {
+                              //border: 1px solid red;
+                              text-align: center;
+                              list-style: none;
+                              &__name {
+                                    font-size: 1.5rem;
+                                    color: $SJSU--primary;
+                              }
+                              &__elem {
+                                    font-size: 1rem;
+                              }
+                        }
+                  }
+            }
+            &__duration {
+                  width: 100%;
+                  //color: white;
+                  font-size: 2rem;
+                  text-align: center;
+                  margin: 0 auto;
+                  margin-top: 5rem;
+                  //border-top: 2px solid $SJSU--2;
+            }
+      }
+
+      &__spacer {
+            margin-bottom: 10rem;
+      }
+
+      &__section {
+            //border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5rem;
+            &__header {
+                  //border: 1px solid red;
+
+                  text-align: left;
+                  margin-bottom: 3rem;
+                  font-size: 4rem;
+                  font-weight: 1000;
+
+                  &__sub {
+                        padding-left: 0.5rem;
+                        font-size: 3rem;
+                        margin-bottom: 2rem;
+                  }
+            }
+
+            &__mainText {
+                  width: 100%;
+                  padding-left: 0.5rem;
+                  text-align: left;
+                  //border: 1px solid red;
+
+                  font-size: 2rem;
+
+                  margin-bottom: 2rem;
+
+                  &__second {
+                        margin-bottom: 5rem;
+                  }
+
+                  &__null {
+                        margin-bottom: 1rem;
+                  }
+            }
+      }
+
+      &__taskList {
+            width: 100%;
+            text-align: left;
+            line-height: 3rem;
+
+            padding-left: 3rem;
+            &__elem {
+                  font-size: 2rem;
+            }
+      }
+
+      &__proOver {
+            display: flex;
+            justify-content: space-evenly;
+            width: 95%;
+            margin: 0 auto;
+            &__left {
+                  //margin-right: 2rem;
+                  //border: 1px solid red;
+                  &__header {
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                        font-weight: 1000;
+                  }
+
+                  &__text {
+                        font-size: 1.5rem;
+                  }
+            }
+            &__right {
+                  padding-left: 2rem;
+                  //border: 1px solid red;
+                  &__header {
+                        color: $SJSU--primary;
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                        font-weight: 1000;
+                  }
+
+                  &__text {
+                        font-size: 1.5rem;
+                  }
+            }
+            margin-bottom: 2rem;
+      }
+
+      &__link {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 5rem;
+            border-bottom: 2px solid $SJSU--primary;
+      }
+
+      &__colors {
+            width: 90%;
+            display: flex;
+            flex-wrap: nowrap;
+            border: 1px solid black;
+            justify-content: space-evenly;
+            margin-bottom:5rem;
+            &__item {
+                  text-align: center;
+                  font-size: 0.75rem;
+                  min-width: 5rem;
+                  min-height: 3rem;
+                  border-radius: 20rem;
+                  padding-top: 2rem;
+                  transition: all 1s;
+                  border: 2px solid black;
+                  &:hover {
+                        transform: translateY(-2rem);
+                  }
+            }
+      }
+}

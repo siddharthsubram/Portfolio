@@ -1,0 +1,98 @@
+.contact {
+      max-width: 100%;
+      //border: 1px solid black;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__header {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            color: $color--redPurple;
+            font-family: "Open Sans", sans-serif;
+
+            //border: 1px solid black;
+            @media (max-width: $laptop) {
+                  font-size: 2.25rem;
+            }
+            @media (max-width: $tablet) {
+                  font-size: 1.75rem;
+            }
+            @media (max-width: $bigPhone) {
+                  font-size: 1rem;
+            }
+      }
+
+      &__intro {
+            width: 80%;
+            padding: 0 3rem 0 3rem;
+            text-align: center;
+            // margin: 0 auto;
+            font-size: 1.5rem;
+            //border: 1px solid black;
+            margin-bottom: 4rem;
+
+            @media (max-width: $tablet) {
+                  font-size: 1.25rem;
+            }
+      }
+}
+
+.socialHolder {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      //border: 1px solid black;
+      padding: 1rem;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+      width: 80%;
+      justify-content: space-evenly;
+
+      @media (max-width: $tablet) {
+            padding: 0.5rem;
+      }
+
+      &__elem {
+            //border: 1px solid black;
+            position: relative;
+            margin: 1rem;
+            max-width: 3rem;
+            min-width: 3rem;
+            flex: 0 1 1%;
+
+            background-size: cover;
+            //padding: 1rem 1.333rem 1rem 1.333rem;
+            background-blend-mode: screen;
+            border-radius: 20rem;
+            transition: all 0.25s;
+            padding: 0.5rem;
+            @media (max-width: $laptop) {
+                  max-width: 2rem;
+            }
+            @media (max-width: $tablet) {
+                  max-width: 1.5rem;
+            }
+            @media (max-width: $bigPhone) {
+                  max-width: 1rem;
+            }
+
+            &:hover {
+                  transform: scale(1.2) translateY(-3px);
+                  cursor: pointer;
+            }
+
+            &__item {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: (-50%, -50%);
+                  max-width: 100%;
+            }
+      }
+}
