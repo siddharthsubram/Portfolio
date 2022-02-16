@@ -943,6 +943,10 @@ body {
   max-width: 100%;
 }
 
+.address {
+  text-decoration: none;
+}
+
 .workHolder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1028,6 +1032,7 @@ body {
 
 .workHolder__content {
   width: 100%;
+  text-decoration: none;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1045,6 +1050,7 @@ body {
   cursor: pointer;
   overflow: hidden;
   background-size: cover;
+  text-decoration: none;
   height: 45rem;
 }
 
