@@ -57,6 +57,13 @@
       }
 }
 
+.resumeLink,
+.resumeLink:hover,
+.resumeLink:active {
+      text-decoration: none;
+      color: inherit;
+}
+
 .socialHolder {
       display: flex;
       flex-direction: row;
