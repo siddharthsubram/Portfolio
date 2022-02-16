@@ -51,6 +51,10 @@ body {
   }
 }
 
+.makeBold {
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   .floatingImage {
     display: none;
@@ -944,7 +948,10 @@ body {
 }
 
 .address {
+  font-size: 20rem;
   text-decoration: none;
+  color: #157d72;
+  color: red;
 }
 
 .workHolder {

@@ -147,13 +147,17 @@
                                     font-size: 0.75rem;
                               }
 
+                              .makeBold {
+                                    font-weight: bold;
+                              }
+
                               &--link {
                                     //align-self: flex-start;
                                     text-align: center;
                                     width: 95%;
                                     //margin-left: 3rem;
 
-                                    text-decoration: none;
+                                    text-decoration: underline;
                                     color: $color--blueGreen;
                                     padding: 0rem;
                                     padding-bottom: 1rem;
