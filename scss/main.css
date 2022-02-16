@@ -51,10 +51,6 @@ body {
   }
 }
 
-.makeBold {
-  font-weight: bold;
-}
-
 @media (max-width: 600px) {
   .floatingImage {
     display: none;
@@ -72,8 +68,8 @@ body {
 }
 
 .redButton {
-  width: 20%;
-  font-size: 1.5rem;
+  width: 15%;
+  font-size: 1rem;
   text-align: center;
   color: #952e4b;
   border: 2px solid #952e4b;
@@ -84,17 +80,18 @@ body {
   padding-bottom: 0.75rem;
   text-transform: uppercase;
   margin-bottom: 5rem;
+  margin-top: 3rem;
   cursor: pointer;
 }
 
 .redButton:hover {
-  font-size: 1.75rem;
+  font-size: 1.15rem;
   letter-spacing: 0.1rem;
-  width: 21%;
+  width: 17%;
   color: white;
   background-color: #952e4b;
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
 }
 
 @media (max-width: 1400px) {
@@ -488,11 +485,14 @@ body {
 
 .aboutMe {
   background-color: #eeeeee;
+  margin-bottom: 5rem;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
 }
 
 .aboutMe__container {
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +500,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5rem;
 }
 
 @media (max-width: 1400px) {
@@ -522,7 +521,6 @@ body {
 }
 
 .aboutMe__container__top {
-  margin-top: 8rem;
   padding: 1rem;
   text-align: left;
   -webkit-box-flex: 1;
@@ -710,6 +708,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 .Portfolio__header {
@@ -784,6 +783,7 @@ body {
 }
 
 .experience {
+  padding-top: 5rem;
   background-color: #eeeeee;
 }
 
@@ -864,13 +864,27 @@ body {
   padding: 0 3rem 0 3rem;
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 1000px) {
   .contact__intro {
     font-size: 1.25rem;
   }
+}
+
+.contact__intro__email {
+  text-decoration: none;
+  color: #952e4b;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__intro__email:hover {
+  font-size: 1.6rem;
+  text-decoration: underline;
 }
 
 .socialHolder {
@@ -1329,10 +1343,14 @@ body {
   }
 }
 
+.accordian--element.active .accordian--element--answer--content .makeBold {
+  font-weight: bold;
+}
+
 .accordian--element.active .accordian--element--answer--content--link {
   text-align: center;
   width: 95%;
-  text-decoration: none;
+  text-decoration: underline;
   color: #157d72;
   padding: 0rem;
   padding-bottom: 1rem;

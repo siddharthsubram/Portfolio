@@ -35,10 +35,24 @@
             // margin: 0 auto;
             font-size: 1.5rem;
             //border: 1px solid black;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
 
             @media (max-width: $tablet) {
                   font-size: 1.25rem;
+            }
+
+            &__email {
+                  text-decoration: none;
+                  color: $color--redPurple;
+                  font-weight: bold;
+                  cursor: pointer;
+                  transition: all 0.3s;
+
+                  &:hover {
+                        font-size: 1.6rem;
+                        text-decoration: underline;
+                        //margin-top: -1rem;
+                  }
             }
       }
 }

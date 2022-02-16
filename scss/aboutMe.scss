@@ -1,16 +1,19 @@
 .aboutMe {
       //border: 1px solid black;
       background-color: rgb(238, 238, 238);
-
+      margin-bottom: 5rem;
+      padding-bottom: 8rem;
+      padding-top: 8rem;
       &__container {
             margin: 0 auto;
-            width: 70%;
+            width: 75%;
             display: flex;
             flex-direction: column;
+
             //align-items: center;
             //padding: 1rem;
             //border: 1px solid black;
-            margin-bottom: 5rem;
+
             @media (max-width: $laptop) {
                   width: 75%;
             }
@@ -23,13 +26,12 @@
 
             &__top {
                   //border: 1px solid black;
-                  margin-top: 8rem;
+                  //margin-top: 8rem;
                   padding: 1rem;
                   text-align: left;
                   flex: 1;
 
                   &__text {
-                        
                         font-family: "Roboto", sans-serif;
                         opacity: 1;
                         width: 15em;
