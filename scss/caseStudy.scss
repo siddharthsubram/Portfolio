@@ -19,7 +19,7 @@
             padding: 0.5rem;
       }
       @media (max-width: $bigPhone) {
-            width: 97%;
+            width: 95%;
             padding: 0.25rem;
       }
 
@@ -28,12 +28,26 @@
             //border-radius: 1rem;
 
             margin: 0 auto;
-            margin-bottom: 5rem;
+            //margin-bottom: 5rem;
             &__src {
                   margin: 0 auto;
                   border-radius: 2rem;
                   max-width: 100%;
                   background-size: cover;
+
+                  @media (max-width: $laptop) {
+                        border-radius: 1.5rem;
+                  }
+                  @media (max-width: $tablet) {
+                        border-radius: 0.75rem;
+                  }
+                  @media (max-width: $bigPhone) {
+                        border-radius: 0.5rem;
+                  }
+            }
+
+            @media (max-width: $tablet) {
+                  margin-bottom: 0rem !important;
             }
       }
 
@@ -128,10 +142,19 @@
             flex-direction: column;
             color: $SJSU--primary;
 
+            //border: 1px solid black;
             width: 100%;
 
             & > * {
                   margin-bottom: 5rem;
+
+                  @media (max-width: $tablet) {
+                        margin-bottom: 2rem;
+                  }
+
+                  @media (max-width: $bigPhone) {
+                        margin-bottom: 1rem;
+                  }
             }
             &__teamMembers {
                   width: 80%;
@@ -199,7 +222,7 @@
                               &__name {
                                     font-size: 1.5rem;
                                     color: $SJSU--primary;
-                                    border-bottom: 1px solid $SJSU--primary;
+                                    //border-bottom: 1px solid $SJSU--primary;
 
                                     @media (max-width: $tablet) {
                                           font-size: 1rem;
@@ -238,6 +261,7 @@
 
                   @media (max-width: $tablet) {
                         font-size: 1rem;
+                        margin-top: 3rem;
                   }
             }
       }
@@ -259,10 +283,30 @@
                   font-size: 4rem;
                   font-weight: 1000;
 
+                  @media (max-width: $laptop) {
+                        font-size: 3.5rem;
+                  }
+                  @media (max-width: $tablet) {
+                        font-size: 2.75rem;
+                  }
+                  @media (max-width: $bigPhone) {
+                        font-size: 2rem;
+                  }
+
                   &__sub {
                         padding-left: 0.5rem;
                         font-size: 3rem;
                         margin-bottom: 2rem;
+
+                        @media (max-width: $laptop) {
+                              font-size: 2.75rem;
+                        }
+                        @media (max-width: $tablet) {
+                              font-size: 2rem;
+                        }
+                        @media (max-width: $bigPhone) {
+                              font-size: 1.5rem;
+                        }
                   }
             }
 
@@ -283,6 +327,16 @@
                   &__null {
                         margin-bottom: 1rem;
                   }
+
+                  @media (max-width: $laptop) {
+                        font-size: 1.75rem;
+                  }
+                  @media (max-width: $tablet) {
+                        font-size: 1.5rem;
+                  }
+                  @media (max-width: $bigPhone) {
+                        font-size: 1rem;
+                  }
             }
       }
 
@@ -290,10 +344,24 @@
             width: 100%;
             text-align: left;
             line-height: 3rem;
-
             padding-left: 3rem;
+
+            @media (max-width: $tablet) {
+                  //margin-top: -2rem;
+                  line-height: 2rem;
+            }
             &__elem {
                   font-size: 2rem;
+
+                  @media (max-width: $laptop) {
+                        font-size: 1.75rem;
+                  }
+                  @media (max-width: $tablet) {
+                        font-size: 1.5rem;
+                  }
+                  @media (max-width: $bigPhone) {
+                        font-size: 1rem;
+                  }
             }
       }
 
@@ -406,11 +474,21 @@
 
       &__colors {
             width: 70%;
+            margin: 0 auto;
             display: flex;
             flex-wrap: nowrap;
             //border: 1px solid black;
             justify-content: space-evenly;
             margin-bottom: 5rem;
+
+            @media (max-width: $tablet) {
+                  width: 80%;
+            }
+
+            @media (max-width: $bigPhone) {
+                  width: 90%;
+            }
+
             &__item {
                   text-align: center;
                   font-size: 0.75rem;
