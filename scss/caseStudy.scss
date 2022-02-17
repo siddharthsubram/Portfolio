@@ -461,6 +461,9 @@
             transition: all 0.5s;
             //border: 1px solid black;
 
+            &__1 {
+                  border: none;
+            }
             @media (max-width: $tablet) {
                   font-size: 1rem;
                   margin-bottom: 3rem;

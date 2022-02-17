@@ -2171,6 +2171,10 @@ html {
   transition: all 0.5s;
 }
 
+.page__link__1 {
+  border: none;
+}
+
 @media (max-width: 1000px) {
   .page__link {
     font-size: 1rem;
