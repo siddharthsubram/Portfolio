@@ -1074,7 +1074,7 @@ html {
 }
 
 .workHolder__content {
-  border: 0.5px solid black;
+  border: 1 solid black;
   width: 100%;
   text-decoration: none;
   position: relative;
@@ -1620,6 +1620,7 @@ html {
 }
 
 .page__vid__src {
+  border: 0.5px solid black;
   margin: 0 auto;
   border-radius: 2rem;
   max-width: 100%;
@@ -1685,6 +1686,30 @@ html {
 
 .page__hero__second {
   margin-bottom: 5rem;
+}
+
+.page .genderPrimary1 {
+  color: #7c3f6e !important;
+}
+
+.page .genderPrimary2 {
+  color: #4f789e !important;
+}
+
+.page .genderPrimary3 {
+  color: #60a4b8 !important;
+}
+
+.page .genderPrimary4 {
+  color: #da98c5 !important;
+}
+
+.page .genderPrimary5 {
+  color: #e2cada !important;
+}
+
+.page .genderPrimary1Pink {
+  border-bottom: 3px solid #7c3f6e;
 }
 
 .page__title {

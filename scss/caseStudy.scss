@@ -24,12 +24,12 @@
       }
 
       &__vid {
-            //border: 1px solid black;
             //border-radius: 1rem;
 
             margin: 0 auto;
             //margin-bottom: 5rem;
             &__src {
+                  border: 0.5px solid black;
                   margin: 0 auto;
                   border-radius: 2rem;
                   max-width: 100%;
@@ -87,6 +87,30 @@
             &__second {
                   margin-bottom: 5rem;
             }
+      }
+
+      .genderPrimary1 {
+            color: $color--genderWage1 !important;
+      }
+
+      .genderPrimary2 {
+            color: $color--genderWage2 !important;
+      }
+
+      .genderPrimary3 {
+            color: $color--genderWage3 !important;
+      }
+
+      .genderPrimary4 {
+            color: $color--genderWage4 !important;
+      }
+
+      .genderPrimary5 {
+            color: $color--genderWage5 !important;
+      }
+
+      .genderPrimary1Pink {
+            border-bottom: 3px solid $color--genderWage1;
       }
 
       &__title {
@@ -203,6 +227,7 @@
                                     // border: 10px soild red;
                                     // padding: 1rem;
                                     // margin: 0 auto;
+                                    
                                     border-radius: 10rem;
                                     max-width: 100%;
                                     object-fit: contain;
