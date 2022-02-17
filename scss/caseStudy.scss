@@ -38,18 +38,22 @@
       }
 
       &__back {
+            text-decoration: none;
+            color: black;
             width: 100%;
             //border: 1px solid black;
-            font-size: 3rem;
-            font-style: italic;
+            margin-top: 5rem;
+            font-size: 2rem;
+            //font-style: italic;
 
             text-align: left;
             margin-bottom: 5rem;
             transition: all 0.5s;
+            cursor: pointer;
             &:hover {
-                  font-size: 3.1rem;
-                  font-weight: 1000;
-                  transform: translateY(-1rem);
+                  font-size: 2.2rem;
+
+                  text-decoration: underline;
             }
       }
 
@@ -74,7 +78,7 @@
       &__title {
             width: 100%;
             text-align: center;
-            font-size: 4rem;
+            font-size: 4.25rem;
             text-transform: uppercase;
             margin: 0 auto;
             //border-bottom: 2.5px solid $SJSU--3;
@@ -83,10 +87,10 @@
             color: $SJSU--primary;
             //border: 1px solid black;
             &__sub {
-                  font-size: 3rem;
+                  font-size: 2.5rem;
             }
 
-            margin-bottom: 5rem;
+            margin-bottom: 1.75rem;
 
             &__subheading {
                   width: 90%;
@@ -106,7 +110,7 @@
                   margin-bottom: 5rem;
             }
             &__teamMembers {
-                  width: 70%;
+                  width: 80%;
                   margin: 0 auto;
                   //border: 1px solid red;
                   display: flex;
@@ -123,10 +127,21 @@
                         max-width: 15rem;
                         //border: 1px solid red;
 
+                        &:hover {
+                              & * > * {
+                                    opacity: 1;
+                              }
+
+                              .page__overView__teamMembers__item__picture {
+                                    padding-left: 2.5rem;
+                                    padding-right: 2.5rem;
+                              }
+                        }
                         &__picture {
                               //border: 1px soild red;
                               padding-left: 3rem;
                               padding-right: 3rem;
+                              transition: all 0.5s;
 
                               &__src {
                                     // border: 10px soild red;
@@ -143,12 +158,21 @@
                               //border: 1px solid red;
                               text-align: center;
                               list-style: none;
+                              line-height: 2rem;
                               &__name {
                                     font-size: 1.5rem;
                                     color: $SJSU--primary;
+                                    border-bottom: 1px solid $SJSU--primary;
                               }
                               &__elem {
+                                    opacity: 0;
+                                    transition: 0.33s;
                                     font-size: 1rem;
+
+                                    &__show {
+                                          opacity: 1;
+                                          font-weight: 800;
+                                    }
                               }
                         }
                   }
@@ -222,10 +246,13 @@
       &__proOver {
             display: flex;
             justify-content: space-evenly;
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
+
+            //border: 1px solid black;
             &__left {
-                  //margin-right: 2rem;
+                  padding-left: 2rem;
+                  padding-right: 2rem;
                   //border: 1px solid red;
                   &__header {
                         margin-bottom: 1rem;
@@ -238,6 +265,7 @@
                   }
             }
             &__right {
+                  padding: 0rem;
                   padding-left: 2rem;
                   //border: 1px solid red;
                   &__header {
@@ -255,21 +283,29 @@
       }
 
       &__link {
+            position: relative;
             width: 90%;
             margin: 0 auto;
             text-align: center;
             font-size: 2rem;
             margin-bottom: 5rem;
             border-bottom: 2px solid $SJSU--primary;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover {
+                  font-size: 2.05rem;
+                  letter-spacing: 0.05rem;
+            }
       }
 
       &__colors {
-            width: 90%;
+            width: 70%;
             display: flex;
             flex-wrap: nowrap;
-            border: 1px solid black;
+            //border: 1px solid black;
             justify-content: space-evenly;
-            margin-bottom:5rem;
+            margin-bottom: 5rem;
             &__item {
                   text-align: center;
                   font-size: 0.75rem;
@@ -277,8 +313,8 @@
                   min-height: 3rem;
                   border-radius: 20rem;
                   padding-top: 2rem;
-                  transition: all 1s;
-                  border: 2px solid black;
+                  transition: all 0.5s ease-in;
+                  //border: 2px solid black;
                   &:hover {
                         transform: translateY(-2rem);
                   }

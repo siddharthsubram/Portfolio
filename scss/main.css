@@ -1621,20 +1621,21 @@ html {
 }
 
 .page__back {
+  text-decoration: none;
+  color: black;
   width: 100%;
-  font-size: 3rem;
-  font-style: italic;
+  margin-top: 5rem;
+  font-size: 2rem;
   text-align: left;
   margin-bottom: 5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .page__back:hover {
-  font-size: 3.1rem;
-  font-weight: 1000;
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  font-size: 2.2rem;
+  text-decoration: underline;
 }
 
 .page__hero {
@@ -1659,17 +1660,17 @@ html {
 .page__title {
   width: 100%;
   text-align: center;
-  font-size: 4rem;
+  font-size: 4.25rem;
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 2rem;
   letter-spacing: 0.75rem;
   color: #225367;
-  margin-bottom: 5rem;
+  margin-bottom: 1.75rem;
 }
 
 .page__title__sub {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .page__title__subheading {
@@ -1695,7 +1696,7 @@ html {
 }
 
 .page__overView__teamMembers {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1722,9 +1723,20 @@ html {
   max-width: 15rem;
 }
 
+.page__overView__teamMembers__item:hover * > * {
+  opacity: 1;
+}
+
+.page__overView__teamMembers__item:hover .page__overView__teamMembers__item__picture {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .page__overView__teamMembers__item__picture {
   padding-left: 3rem;
   padding-right: 3rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .page__overView__teamMembers__item__picture__src {
@@ -1739,15 +1751,25 @@ html {
 .page__overView__teamMembers__item__roles {
   text-align: center;
   list-style: none;
+  line-height: 2rem;
 }
 
 .page__overView__teamMembers__item__roles__name {
   font-size: 1.5rem;
   color: #225367;
+  border-bottom: 1px solid #225367;
 }
 
 .page__overView__teamMembers__item__roles__elem {
+  opacity: 0;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
   font-size: 1rem;
+}
+
+.page__overView__teamMembers__item__roles__elem__show {
+  opacity: 1;
+  font-weight: 800;
 }
 
 .page__overView__duration {
@@ -1820,9 +1842,14 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+.page__proOver__left {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .page__proOver__left__header {
@@ -1836,6 +1863,7 @@ html {
 }
 
 .page__proOver__right {
+  padding: 0rem;
   padding-left: 2rem;
 }
 
@@ -1851,22 +1879,30 @@ html {
 }
 
 .page__link {
+  position: relative;
   width: 90%;
   margin: 0 auto;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 5rem;
   border-bottom: 2px solid #225367;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page__link:hover {
+  font-size: 2.05rem;
+  letter-spacing: 0.05rem;
 }
 
 .page__colors {
-  width: 90%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  border: 1px solid black;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -1880,9 +1916,8 @@ html {
   min-height: 3rem;
   border-radius: 20rem;
   padding-top: 2rem;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  border: 2px solid black;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .page__colors__item:hover {
