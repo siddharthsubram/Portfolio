@@ -1074,9 +1074,12 @@ html {
 }
 
 .workHolder__content {
+  border: 0.5px solid black;
   width: 100%;
   text-decoration: none;
   position: relative;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1318,6 +1321,8 @@ html {
 }
 
 .accordian--element.active .accordian--element--answer {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #ffffff;
   height: auto;
   padding: 1rem;
@@ -1406,6 +1411,8 @@ html {
 }
 
 .accordian--element.active .accordian--element--front {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 1;

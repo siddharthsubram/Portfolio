@@ -115,6 +115,7 @@
             }
             &.active {
                   .accordian--element--answer {
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         background-color: $color--lightGrey;
                         height: auto;
                         padding: 1rem;
@@ -196,6 +197,7 @@
                   }
 
                   .accordian--element--front {
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         transition: 0.5s;
                         opacity: 1;
                         background-color: $color--lightGrey;
