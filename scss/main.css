@@ -1603,7 +1603,7 @@ html {
 
 @media (max-width: 650px) {
   .page {
-    width: 95%;
+    width: 97%;
     padding: 0.25rem;
   }
 }
@@ -1679,6 +1679,46 @@ html {
   color: #687475;
 }
 
+@media (max-width: 1400px) {
+  .page__title__subheading {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page__title__subheading {
+    font-size: 1.5rem !important;
+    letter-spacing: 0.5rem !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .page__title__subheading {
+    letter-spacing: 0.15rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .page__title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page__title {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .page__title {
+    font-size: 2rem;
+  }
+}
+
 .page__overView {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1712,6 +1752,12 @@ html {
           align-items: flex-start;
 }
 
+@media (max-width: 1000px) {
+  .page__overView__teamMembers {
+    width: 95%;
+  }
+}
+
 .page__overView__teamMembers__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1720,7 +1766,20 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  cursor: pointer;
   max-width: 15rem;
+}
+
+@media (max-width: 1000px) {
+  .page__overView__teamMembers__item {
+    max-width: 13rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .page__overView__teamMembers__item {
+    max-width: 10rem;
+  }
 }
 
 .page__overView__teamMembers__item:hover * > * {
@@ -1760,6 +1819,13 @@ html {
   border-bottom: 1px solid #225367;
 }
 
+@media (max-width: 1000px) {
+  .page__overView__teamMembers__item__roles__name {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
 .page__overView__teamMembers__item__roles__elem {
   opacity: 0;
   -webkit-transition: 0.33s;
@@ -1767,9 +1833,23 @@ html {
   font-size: 1rem;
 }
 
+@media (max-width: 1000px) {
+  .page__overView__teamMembers__item__roles__elem {
+    padding-top: 0.25rem;
+    line-height: 1rem;
+  }
+}
+
 .page__overView__teamMembers__item__roles__elem__show {
   opacity: 1;
   font-weight: 800;
+}
+
+@media (max-width: 1000px) {
+  .page__overView__teamMembers__item__roles__elem__show {
+    padding-top: 0.25rem;
+    line-height: 1rem;
+  }
 }
 
 .page__overView__duration {
@@ -1778,6 +1858,12 @@ html {
   text-align: center;
   margin: 0 auto;
   margin-top: 5rem;
+}
+
+@media (max-width: 1000px) {
+  .page__overView__duration {
+    font-size: 1rem;
+  }
 }
 
 .page__spacer {
@@ -1844,12 +1930,32 @@ html {
           justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .page__proOver {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .page__proOver__left {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .page__proOver__left {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 .page__proOver__left__header {
@@ -1858,13 +1964,43 @@ html {
   font-weight: 1000;
 }
 
+@media (max-width: 1000px) {
+  .page__proOver__left__header {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .page__proOver__left__header {
+    font-size: 1.25rem;
+  }
+}
+
 .page__proOver__left__text {
   font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .page__proOver__left__text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .page__proOver__left__text {
+    font-size: 1rem;
+  }
 }
 
 .page__proOver__right {
   padding: 0rem;
   padding-left: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .page__proOver__right {
+    padding: 0;
+  }
 }
 
 .page__proOver__right__header {
@@ -1874,8 +2010,32 @@ html {
   font-weight: 1000;
 }
 
+@media (max-width: 1000px) {
+  .page__proOver__right__header {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .page__proOver__right__header {
+    font-size: 1.25rem;
+  }
+}
+
 .page__proOver__right__text {
   font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .page__proOver__right__text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .page__proOver__right__text {
+    font-size: 1rem;
+  }
 }
 
 .page__link {
@@ -1889,6 +2049,13 @@ html {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .page__link {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .page__link:hover {

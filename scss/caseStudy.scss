@@ -19,7 +19,7 @@
             padding: 0.5rem;
       }
       @media (max-width: $bigPhone) {
-            width: 95%;
+            width: 97%;
             padding: 0.25rem;
       }
 
@@ -96,6 +96,30 @@
                   width: 90%;
                   font-size: 2.5rem;
                   color: $SJSU--secondary;
+
+                  @media (max-width: $laptop) {
+                        font-size: 1.75rem !important;
+                  }
+                  @media (max-width: $tablet) {
+                        font-size: 1.5rem !important;
+                        letter-spacing: 0.5rem !important;
+                  }
+                  @media (max-width: $bigPhone) {
+                        letter-spacing: 0.15rem !important;
+                        font-size: 1rem !important;
+                  }
+            }
+
+            @media (max-width: $laptop) {
+                  font-size: 4rem;
+            }
+            @media (max-width: $tablet) {
+                  font-size: 3rem;
+                  letter-spacing: 0.5rem;
+                  margin-bottom: 1rem;
+            }
+            @media (max-width: $bigPhone) {
+                  font-size: 2rem;
             }
       }
 
@@ -119,14 +143,23 @@
 
                   justify-content: space-evenly;
                   align-items: flex-start;
+
+                  @media (max-width: $tablet) {
+                        width: 95%;
+                  }
                   &__item {
                         display: flex;
                         flex-direction: column;
-
+                        cursor: pointer;
                         //padding: 0.5;
                         max-width: 15rem;
                         //border: 1px solid red;
-
+                        @media (max-width: $tablet) {
+                              max-width: 13rem;
+                        }
+                        @media (max-width: $bigPhone) {
+                              max-width: 10rem;
+                        }
                         &:hover {
                               & * > * {
                                     opacity: 1;
@@ -159,19 +192,36 @@
                               text-align: center;
                               list-style: none;
                               line-height: 2rem;
+                              // @media (max-width: $tablet) {
+                              //       line-height: 1.75rem;
+                              // }
+
                               &__name {
                                     font-size: 1.5rem;
                                     color: $SJSU--primary;
                                     border-bottom: 1px solid $SJSU--primary;
+
+                                    @media (max-width: $tablet) {
+                                          font-size: 1rem;
+                                          line-height: 1rem;
+                                    }
                               }
                               &__elem {
                                     opacity: 0;
                                     transition: 0.33s;
                                     font-size: 1rem;
-
+                                    @media (max-width: $tablet) {
+                                          padding-top: 0.25rem;
+                                          line-height: 1rem;
+                                    }
                                     &__show {
                                           opacity: 1;
                                           font-weight: 800;
+
+                                          @media (max-width: $tablet) {
+                                                padding-top: 0.25rem;
+                                                line-height: 1rem;
+                                          }
                                     }
                               }
                         }
@@ -185,6 +235,10 @@
                   margin: 0 auto;
                   margin-top: 5rem;
                   //border-top: 2px solid $SJSU--2;
+
+                  @media (max-width: $tablet) {
+                        font-size: 1rem;
+                  }
             }
       }
 
@@ -248,35 +302,80 @@
             justify-content: space-evenly;
             width: 100%;
             margin: 0 auto;
+            flex-direction: row;
 
-            //border: 1px solid black;
+            @media (max-width: $tablet) {
+                  flex-direction: column;
+            }
+
+            // border: 1px solid black;
             &__left {
                   padding-left: 2rem;
                   padding-right: 2rem;
                   //border: 1px solid red;
+
+                  @media (max-width: $tablet) {
+                        padding: 0;
+                        margin-bottom: 2rem;
+                  }
+
                   &__header {
                         margin-bottom: 1rem;
                         font-size: 2rem;
                         font-weight: 1000;
+
+                        @media (max-width: $tablet) {
+                              font-size: 1.5rem;
+                        }
+                        @media (max-width: $bigPhone) {
+                              font-size: 1.25rem;
+                        }
                   }
 
                   &__text {
                         font-size: 1.5rem;
+
+                        @media (max-width: $tablet) {
+                              font-size: 1.25rem;
+                        }
+                        @media (max-width: $bigPhone) {
+                              font-size: 1rem;
+                        }
                   }
             }
             &__right {
                   padding: 0rem;
                   padding-left: 2rem;
                   //border: 1px solid red;
+
+                  @media (max-width: $tablet) {
+                        padding: 0;
+                  }
+
                   &__header {
                         color: $SJSU--primary;
                         margin-bottom: 1rem;
                         font-size: 2rem;
                         font-weight: 1000;
+
+                        @media (max-width: $tablet) {
+                              font-size: 1.5rem;
+                        }
+                        @media (max-width: $bigPhone) {
+                              font-size: 1.25rem;
+                        }
                   }
 
                   &__text {
                         font-size: 1.5rem;
+
+                        @media (max-width: $tablet) {
+                              font-size: 1.25rem;
+                        }
+
+                        @media (max-width: $bigPhone) {
+                              font-size: 1rem;
+                        }
                   }
             }
             margin-bottom: 2rem;
@@ -292,6 +391,12 @@
             border-bottom: 2px solid $SJSU--primary;
             cursor: pointer;
             transition: all 0.5s;
+            //border: 1px solid black;
+
+            @media (max-width: $tablet) {
+                  font-size: 1rem;
+                  margin-bottom: 3rem;
+            }
 
             &:hover {
                   font-size: 2.05rem;
