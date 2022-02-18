@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="scss/main.css">
-      <title>San Jose Dragon Boat</title>
+      <title>Gender-Wage Gap</title>
       <!-- Fonts -->
       <style>
             @import url('https://fonts.googleapis.com/css2?family=Delius&family=Kalam:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
@@ -36,7 +36,7 @@
                   </div>
             </div>
             <div class="page__hero">
-                  <img src="src/GenderWageMobile.png" alt="" class="page__hero__src">
+                  <img src="src/Gender-wage_ title.png" alt="" class="page__hero__src">
             </div>
             <div class="page__overView">
 
@@ -92,7 +92,7 @@
                   <img src="src/GenderWageMobile.png" alt="" class="page__hero__src">
             </div>
 
-            <!-- <div style = "margin-top:10rem;" class="page__section">
+            <<div style = "margin-top:10rem;" class="page__section">
                   <h2 class="page__section__header">
                         Background
                   </h2>
@@ -110,54 +110,22 @@
                   <img src="src/22.png" alt="" class="page__hero__src page__hero__second">
 
                   <p class="page__section__mainText">
-                        The project was successful and was selected to be an example as a demonstration of work for future classes. However having it been made more than a year ago, I have grown much more as a developer and designer since I have created this visualization, and I wanted to improve on this existing project iwht my newfound skills. Firstly, I wanted to use a more aesthetic color scheme that wasen't focused purely on visual constrast. Secondly, I wanted to make the design responsive, as this version of the graph is very difficult to navigate on mobile devices. <br><br>
+                        The project was successful and was selected to be an example of work for future classes. However having it been made more than a year ago, I  wanted to improve on this project with my current skills. <br> <br>
 
-                        The main change that I wanted to incorperate however was to create a 
+                        When I initially finished the visualization, my instructor suggested creating a way to <span style = "font-weight:bold";> display the change in wage over time</span>. I was unable to create that feature then, but I wanted to add that functionality this time   <br><br>
+
+                        My overall goals for this iteration were as follows
                   </p>
       
                   <ul class="page__taskList">
                         <li class="page__taskList__elem">
-                              Fully Modular web design, allowing for easy modification of the members and officer lists in the future
+                              <span style = "font-weight:bold";> Responsive design</span>, the graph should take up the entire screen width regardless of screen size.  
                         </li>
-                        <li class="page__taskList__elem"> Visual designs and elements that represent SJDB and pay homage to the team's legacy  </li>
-                        <li class="page__taskList__elem"> Provide all the necessary information regarding practices and club policies to potential recruits without appearing overbearing </li>
+                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> Typography and Color scheme </span>, the visual design should enhance the visualizations's interactivity and experience </li>
+                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> display the change in wage over time</span>, in a way that does not overpower the existing visualization  </li>
                   </ul>
 
-
-
-
             </div>
-
-            <div  class="page__section">
-                  <h2 class="page__section__header">
-                        Research
-                  </h2>
-
-                  <h3 class="page__section__header__sub">
-                        Persona Creation 
-                  </h3>
-
-                  <p class="page__section__mainText page__section__mainText__second ">
-                        We started our research by consulting Kevin Pham, the team manager. As the team manager for multiple years, we believed that Kevin would have an understanding of the needs of both team members and potential recruits. We therefore created a rough persona of Kevin to understand his wants and needs, and how to design our website in that would assist him in his duties as a manager 
-                  </p>
-
-                  
-
-                  <img src="src/KevinPersona.png" alt="" class="page__hero__src page__hero__second">
-
-                  <p class="page__section__mainText">
-                        After completing Kevin's persona, we started to formalize the goals for the website. The main features Kevin wanted to see were on making the website sustainable for the years to come, honoring the legacy of past generations of SJDB, and helping raise awareness of SJDB both on and off-campus. Based on the information we gathered, our goals for the website were as follows
-                  </p>
-      
-                  <ul class="page__taskList">
-                        <li class="page__taskList__elem">
-                              Fully Modular web design, allowing for easy modification of the members and officer lists in the future
-                        </li>
-                        <li class="page__taskList__elem"> Visual designs and elements that represent SJDB and pay homage to the team's legacy  </li>
-                        <li class="page__taskList__elem"> Provide all the necessary information regarding practices and club policies to potential recruits without appearing overbearing </li>
-                  </ul>
-            </div>
-
 
             <div class="page__section">
                   <h2 class="page__section__header">
@@ -165,21 +133,54 @@
                   </h2>
 
                   <h3 class="page__section__header__sub">
-                        Sketches
+                        Goal 1: Responsive Design 
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        We opted for a multi page design in order to compartmentalize relevant information in distict pages, allowing for more whitespace that could be filled with team pictures and media that would capture the spirit of SJDB
+                        By rendering the graph at at the maximum viewport width of the screen, it will be displayed at the largest width, and graph components can shrink down to scale. But shrinking the graph labels such as occupation names would greatly reduce readability, while not shrinking them at all would cause too much of the graph to be taken up by labels, reducing contrast in wage gaps. <br><br> 
+
+                        To solve this problem, I <span style = "font-weight:bold";> shorthanded the names of several occupations. </span> I then allowed the full names to be displayed when hovered, <span style = "font-weight:bold";>prioritizing readability. </span> 
                   </p>
 
-                  <img src="src/Quynh's graphics.jpg" alt="" class="page__hero__src">
+                  <div class="page__section__readability">
+                        <h3 class="page__section__readability__elem">
+                              <div class="page__section__readability__elem__left">Transportation and material moving occupations 
+                              </div>
+                              <div class="page__section__readability__elem__middle">&rarr;
+                              </div>
+                              <div class="page__section__readability__elem__right"> Transportation and Moving
+                              </div>
+                        </h3>
+                        <h3 class="page__section__readability__elem">
+                              <div class="page__section__readability__elem__left">Security guards and gaming surveillance officers
+
+                                    
+                              </div>
+                              <div class="page__section__readability__elem__middle">&rarr;
+                              </div>
+                              <div class="page__section__readability__elem__right"> Security guards and surveillance
+                              </div>
+                        </h3>
+                        <h3 class="page__section__readability__elem">
+                              <div class="page__section__readability__elem__left">Miscellaneous agricultural workers
+ 
+                              </div>
+                              <div class="page__section__readability__elem__middle">&rarr;
+                              </div>
+                              <div class="page__section__readability__elem__right"> agricultural workers
+
+                              </div>
+                        </h3>
+                  </div>
+
+                  
 
                   <h3 class="page__section__header__sub">
                         Visual Design
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        As we were building our website for an SJSU affiliated sports team, we initially wanted our colors to represent the school's colors of regal blue and yellow. But after realizing that past iterations of SJDB merchandise and logos featured primarily darker blue colros and using yellow sparingly as an accent, we decided to follow suite with that previous color scheme to pay homage to the team's legacy and history
+                        I chose a blue-green to purple analogous color scheme. I used blue and pinkish-red to easily identify the male and female entries. I used as the main accent color as it combines red and blue, showing that the graph is a combination of both genders genders.  
                   </p>
 
                   <div class="page__colors">
@@ -196,11 +197,11 @@
 
                   <ul class="page__taskList">
                         <li style = "font-weight: 1000; "class="page__taskList__elem">
-                              Libre Franklin
+                              Sans-serif
                         </li>
-                        <li style = "font-weight: 700; "class="page__taskList__elem">Libre Franklin</li>
-                        <li style = "font-weight: 500; "class="page__taskList__elem">Libre Franklin</li>
-                        <li style = "font-weight: 100; font-style: italic; "class="page__taskList__elem">Libre Franklin</li>
+                        <li style = "font-weight: 700; "class="page__taskList__elem">Sans-serif</li>
+                        <li style = "font-weight: 500; "class="page__taskList__elem">Sans-serif</li>
+                        <li style = "font-weight: 100; font-style: italic; "class="page__taskList__elem">Sans-serif</li>
                   </ul>
 
             </div>
