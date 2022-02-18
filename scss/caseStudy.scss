@@ -1,3 +1,31 @@
+.genderPrimary1 {
+      color: $color--genderWage1 !important;
+}
+
+.plainBlack {
+      color: black !important;
+}
+
+.genderPrimary2 {
+      color: $color--genderWage2 !important;
+}
+
+.genderPrimary3 {
+      color: $color--genderWage3 !important;
+}
+
+.genderPrimary4 {
+      color: $color--genderWage4 !important;
+}
+
+.genderPrimary5 {
+      color: $color--genderWage5 !important;
+}
+
+.genderPrimary1Pink {
+      border-bottom: 3px solid $color--genderWage1;
+}
+
 .page {
       font-family: "Libre Franklin", sans-serif;
       background-color: #ffffff;
@@ -89,30 +117,6 @@
             }
       }
 
-      .genderPrimary1 {
-            color: $color--genderWage1 !important;
-      }
-
-      .genderPrimary2 {
-            color: $color--genderWage2 !important;
-      }
-
-      .genderPrimary3 {
-            color: $color--genderWage3 !important;
-      }
-
-      .genderPrimary4 {
-            color: $color--genderWage4 !important;
-      }
-
-      .genderPrimary5 {
-            color: $color--genderWage5 !important;
-      }
-
-      .genderPrimary1Pink {
-            border-bottom: 3px solid $color--genderWage1;
-      }
-
       &__title {
             width: 100%;
             text-align: center;
@@ -187,7 +191,7 @@
                   display: flex;
                   margin-top: 1rem;
                   flex-wrap: wrap;
-
+                  margin-top: 7.5rem;
                   justify-content: space-evenly;
                   align-items: flex-start;
 
@@ -300,7 +304,7 @@
             //border: 1px solid green;
             display: flex;
             flex-direction: column;
-            margin-bottom: 5rem;
+            margin-bottom: 7.5rem;
             &__header {
                   //border: 1px solid red;
 
@@ -520,11 +524,11 @@
 
             &__item {
                   text-align: center;
-                  font-size: 0.75rem;
-                  min-width: 5rem;
+                  font-size: 1rem;
+                  min-width: 6rem;
                   min-height: 3rem;
                   border-radius: 20rem;
-                  padding-top: 2rem;
+                  padding-top: 3rem;
                   transition: all 0.5s ease-in;
                   //border: 2px solid black;
                   &:hover {

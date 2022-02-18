@@ -998,7 +998,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  width: 65%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1008,9 +1008,9 @@ html {
   background-color: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .workHolder {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -1577,6 +1577,34 @@ html {
   }
 }
 
+.genderPrimary1 {
+  color: #7c3f6e !important;
+}
+
+.plainBlack {
+  color: black !important;
+}
+
+.genderPrimary2 {
+  color: #4f789e !important;
+}
+
+.genderPrimary3 {
+  color: #60a4b8 !important;
+}
+
+.genderPrimary4 {
+  color: #da98c5 !important;
+}
+
+.genderPrimary5 {
+  color: #e2cada !important;
+}
+
+.genderPrimary1Pink {
+  border-bottom: 3px solid #7c3f6e;
+}
+
 .page {
   font-family: "Libre Franklin", sans-serif;
   background-color: #ffffff;
@@ -1688,30 +1716,6 @@ html {
   margin-bottom: 5rem;
 }
 
-.page .genderPrimary1 {
-  color: #7c3f6e !important;
-}
-
-.page .genderPrimary2 {
-  color: #4f789e !important;
-}
-
-.page .genderPrimary3 {
-  color: #60a4b8 !important;
-}
-
-.page .genderPrimary4 {
-  color: #da98c5 !important;
-}
-
-.page .genderPrimary5 {
-  color: #e2cada !important;
-}
-
-.page .genderPrimary1Pink {
-  border-bottom: 3px solid #7c3f6e;
-}
-
 .page__title {
   width: 100%;
   text-align: center;
@@ -1811,6 +1815,7 @@ html {
   margin-top: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 7.5rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -1878,6 +1883,7 @@ html {
   text-align: center;
   list-style: none;
   line-height: 2rem;
+  color: #225367;
 }
 
 .page__overView__teamMembers__item__roles__name {
@@ -1945,7 +1951,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5rem;
+  margin-bottom: 7.5rem;
 }
 
 .page__section__header {
@@ -2238,11 +2244,11 @@ html {
 
 .page__colors__item {
   text-align: center;
-  font-size: 0.75rem;
-  min-width: 5rem;
+  font-size: 1rem;
+  min-width: 6rem;
   min-height: 3rem;
   border-radius: 20rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
