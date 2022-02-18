@@ -227,7 +227,7 @@
                                     // border: 10px soild red;
                                     // padding: 1rem;
                                     // margin: 0 auto;
-                                    
+
                                     border-radius: 10rem;
                                     max-width: 100%;
                                     object-fit: contain;
@@ -240,6 +240,7 @@
                               text-align: center;
                               list-style: none;
                               line-height: 2rem;
+                              color: $SJSU--primary;
                               // @media (max-width: $tablet) {
                               //       line-height: 1.75rem;
                               // }
@@ -319,7 +320,7 @@
                   }
 
                   &__sub {
-                        padding-left: 0.5rem;
+                        // padding-left: 0.5rem;
                         font-size: 3rem;
                         margin-bottom: 2rem;
 
@@ -337,7 +338,7 @@
 
             &__mainText {
                   width: 100%;
-                  padding-left: 0.5rem;
+                  // padding-left: 0.5rem;
                   text-align: left;
                   //border: 1px solid red;
 

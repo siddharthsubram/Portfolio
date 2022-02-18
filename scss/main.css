@@ -1974,7 +1974,6 @@ html {
 }
 
 .page__section__header__sub {
-  padding-left: 0.5rem;
   font-size: 3rem;
   margin-bottom: 2rem;
 }
@@ -1999,7 +1998,6 @@ html {
 
 .page__section__mainText {
   width: 100%;
-  padding-left: 0.5rem;
   text-align: left;
   font-size: 2rem;
   margin-bottom: 2rem;
