@@ -119,10 +119,10 @@
       
                   <ul class="page__taskList">
                         <li class="page__taskList__elem">
-                              <span style = "font-weight:bold";> Responsive design</span>, the graph should take up the entire screen width regardless of screen size.  
+                              <span style = "font-weight:bold";> Responsive design: </span> the graph should take up the entire screen width regardless of screen size.  
                         </li>
-                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> Typography and Color scheme </span>, the visual design should enhance the visualizations's interactivity and experience </li>
-                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> display the change in wage over time</span>, in a way that does not overpower the existing visualization  </li>
+                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> Visual Design:</span> the typography and color scheme should enhance the visualizations's experience and readability </li>
+                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> display the change in wage over time:</span> in a way that does not overpower the existing visualization  </li>
                   </ul>
 
             </div>
@@ -176,11 +176,11 @@
                   
 
                   <h3 class="page__section__header__sub">
-                        Visual Design
+                        Goal 2: Visual Design
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        I chose a blue-green to purple analogous color scheme. I used blue and pinkish-red to easily identify the male and female entries. I used as the main accent color as it combines red and blue, showing that the graph is a combination of both genders genders.  
+                        I chose a blue-green to purple analogous color scheme. I used blue and pinkish-red to easily identify the male and female entries. I used as the main accent color as it combines red and blue, showing  the combination of both genders genders.  
                   </p>
 
                   <div class="page__colors">
@@ -204,30 +204,43 @@
                         <li style = "font-weight: 100; font-style: italic; "class="page__taskList__elem">Sans-serif</li>
                   </ul>
 
-            </div>
-
-            <div class="page__section">
-                  <h2 class="page__section__header">
-                        Development
-                  </h2>
-
                   <h3 class="page__section__header__sub">
-                        Prototpying 
+                        Goal 3: Change in Wage over time
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        As a major concern was long-term scalability, we developed the website in a highly modular fashion. Allowing future SJDB members with little coding experience to be able to easily add or delete website content such as adding new officer memebers
+                        The US Bureau of Labor Statistics does not keep career names constant. For example, the job computer programmer could be renamed to software developer betweeb years. Additionally, new careers can be added and old careers can be taken away, making it <span style = "font-weight:bold";>difficult to calculate the change of wage over time of a particular career. </span>
+                  </p>
+                  <div class="page__section__readability">
+                        <h3 class="page__section__readability__elem">
+                              <div class="page__section__readability__elem__left">Computer Programmer
+                              </div>
+                              <div class="page__section__readability__elem__middle">&rarr; ? 
+                              </div>
+                              <div class="page__section__readability__elem__right"> software developer
+                              </div>
+                        </h3>
+                        <h3 class="page__section__readability__elem">
+                              <div class="page__section__readability__elem__left"> truck drivers 
+
+                                    
+                              </div>
+                              <div class="page__section__readability__elem__middle"> &rarr; ? 
+                              </div>
+                              <div class="page__section__readability__elem__right"> Long-haul Transportation
+                              </div>
+                        </h3>
+                        
+                  </div>
+                  <p class="page__section__mainText page__section__mainText__second ">
+                        I solved this problem by first filtering out occupations that had less than 700 or greater than 10,000 surveyed workers. This accounted for careers that were either losing popularity, or were instead subgroups. I then manually renamed uniquely named occupations to similarly matching ones. Finally, I calculated the change in wage gap over time for each occupation as the oldest reported wage for that particular occupation subtracted from the occupation's current wage 
                   </p>
 
-                  <img src="src/wireframetoprototype.png" alt="" class="page__hero__src">
+                  <img src="src/sortingLogic.png" alt="" class="page__hero__src page__hero__second">
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        To highlight current and past SJDB members, officers, and alunni, we built a flashcard system that interested team members could fill out to be featured on the website. These flashcards were placed in non a non obtrusive sections of the website, maintaining a clutter-free website layout
+                        These calculated changes in wage-gap can then be hovered by users by hovering on an occupation name
                   </p>
-
-                  <img style = "margin-top: -5rem"src="src/Andrew_luong_bigger.png" alt="" class="page__hero__src">
-
-            </div>
 
             <div class="page__section">
                   <h2 class="page__section__header">
@@ -247,7 +260,7 @@
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        Through the creationg of the SJDB landing page, I learned that website contributions don't have to come from solely designers and developers. As an example, some members of SJDB wanted a way to voice their opinions and positive experiences with the team, which led to me creating the flashcard system <br><br>Outside of this, the sport of dragonboat has played a huge role in my early adulthood years, and being able to build a website that would help bring awareness towards dragon boat was deeply fullfilling for me
+                        This project more reflected on my software architecture skills more than my design skills. However, from seeing my previous graph and this graph, I am glad to see improvements in both design and software development. 
                   </p>
 
                   
