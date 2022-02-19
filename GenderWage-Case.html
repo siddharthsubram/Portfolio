@@ -56,7 +56,7 @@
                         </div>
                         <div class="page__proOver__right">
                               <h2 class="page__proOver__right__header genderPrimary1">Outcome</h2>
-                              <p class="page__proOver__right__text plainBlack"> Visualization is deployable on all devices. Visualization selected amongst a class of 80 students to be used as an example for future use of iterations of the course.  </p>
+                              <p class="page__proOver__right__text plainBlack"> Visualization is deployable on all devices and was selected amongst a class of 80 students to be used as an example for future use of iterations of the class.  </p>
                         </div>
                   </div>
               
@@ -98,7 +98,7 @@
                   </h2>
 
                   <p class="page__section__mainText page__section__mainText__second">
-                        I created the gender-wage data visualization for a data visualization class I took in 2020. As part of the assignment, I recreated David McCandles visualization of the gender-wage gap (<a style = " color :#7c3f6e; text-decoration: none;" href = "//www.informationisbeautiful.net/visualizations/gender-pay-gap/"> View it here </a>) and attempted to add additional functionality of it. My version of his visualization allowed for displaying data over many years, and for displaying the wage gap of a particular occupation when hovered. 
+                        I created the gender-wage data visualization for my introduction to data visualization course. As part of an assignment, I recreated David McCandles visualization of the gender-wage gap (<a style = " color :#7c3f6e; text-decoration: none;" href = "//www.informationisbeautiful.net/visualizations/gender-pay-gap/"> View it here </a>) and attempted to add additional functionality of it. My version of his visualization allowed for displaying data over many years, and for displaying the wage gap of a particular occupation when hovered. 
                   </p>
 
                   <h3 style = "margin-bottom: 0rem;"class="page__link genderPrimary1 genderPrimary1Pink">
@@ -110,9 +110,9 @@
                   <img src="src/22.png" alt="" class="page__hero__src page__hero__second">
 
                   <p class="page__section__mainText">
-                        The project was successful and was selected to be an example of work for future classes. However having it been made more than a year ago, I  wanted to improve on this project with my current skills. <br> <br>
+                        The project was successful and was selected to be an example of work for future classes. But having created it more than a year ago, I wanted to improve on this project with my current skills. <br> <br>
 
-                        When I initially finished the visualization, my instructor suggested creating a way to <span style = "font-weight:bold";> display the change in wage over time</span>. I was unable to create that feature then, but I wanted to add that functionality this time   <br><br>
+                        When I initially finished the visualization, my instructor suggested creating a way to <span style = "font-weight:bold";> display the change in wage over time</span>. I was unable to create that feature then, but I wanted to add that functionality this time   <br><br><br>
 
                         My overall goals for this iteration were as follows
                   </p>
@@ -121,8 +121,8 @@
                         <li class="page__taskList__elem">
                               <span style = "font-weight:bold";> Responsive design: </span> the graph should take up the entire screen width regardless of screen size.  
                         </li>
-                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> Visual Design:</span> the typography and color scheme should enhance the visualizations's experience and readability </li>
-                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> display the change in wage over time:</span> in a way that does not overpower the existing visualization  </li>
+                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> Visual Design:</span> the color schemes and typographies should be consious design choices that enhance the experience of viewing the visualization </li>
+                        <li class="page__taskList__elem"> <span style = "font-weight:bold";> Display Change in wage-gap over years</span> in a way that does not overpower the existing visualization  </li>
                   </ul>
 
             </div>
@@ -137,7 +137,7 @@
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        By rendering the graph at at the maximum viewport width of the screen, it will be displayed at the largest width, and graph components can shrink down to scale. But shrinking the graph labels such as occupation names would greatly reduce readability, while not shrinking them at all would cause too much of the graph to be taken up by labels, reducing contrast in wage gaps. <br><br> 
+                        By rendering the graph at at the maximum viewport width of the screen, it will be displayed at the largest width, and graph components will grow or shrink to scale. But shrinking the graph labels such as the occupation names would greatly reduce readability, but not shrinking them at all would cause too much of the graph to be taken up by labels, reducing the visual contrast in wage gaps. <br><br> 
 
                         To solve this problem, I <span style = "font-weight:bold";> shorthanded the names of several occupations. </span> I then allowed the full names to be displayed when hovered, <span style = "font-weight:bold";>prioritizing readability. </span> 
                   </p>
@@ -180,7 +180,7 @@
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        I chose a blue-green to purple analogous color scheme. I used blue and pinkish-red to easily identify the male and female entries. I used as the main accent color as it combines red and blue, showing  the combination of both genders genders.  
+                        I chose a blue-green to purple analogous color scheme to  include all colors that traditionally represent males and females in society. I used blue and pinkish-red to easily identify the male and female entries. I used purple as the main accent color as it combines red and blue, showing the combination of male and female elements in creating this graph.  
                   </p>
 
                   <div class="page__colors">
@@ -209,7 +209,7 @@
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        The US Bureau of Labor Statistics does not keep career names constant. For example, the job computer programmer could be renamed to software developer betweeb years. Additionally, new careers can be added and old careers can be taken away, making it <span style = "font-weight:bold";>difficult to calculate the change of wage over time of a particular career. </span>
+                        The US Bureau of Labor Statistics does not keep career names constant. For example, the job "computer programmer" could be renamed to "software developer" between years. Additionally, new careers were added and existing careers were removed between years, making it <span style = "font-weight:bold";>difficult to calculate the changes in wage-gaps over time </span>
                   </p>
                   <div class="page__section__readability">
                         <h3 class="page__section__readability__elem">
@@ -233,13 +233,13 @@
                         
                   </div>
                   <p class="page__section__mainText page__section__mainText__second ">
-                        I solved this problem by first filtering out occupations that had less than 700 or greater than 10,000 surveyed workers. This accounted for careers that were either losing popularity, or were instead subgroups. I then manually renamed uniquely named occupations to similarly matching ones. Finally, I calculated the change in wage gap over time for each occupation as the oldest reported wage for that particular occupation subtracted from the occupation's current wage 
+                        I solved this problem by first filtering out occupations that had less than 700 or greater than 10,000 surveyed workers. This accounted for careers that were either losing popularity, or were larger subgroups of occupations rather than individual jobs. I then manually renamed uniquely named occupations to similarly matching ones. Finally, I calculated the change in wage gap over time for each occupation as the oldest reported wage for that particular occupation subtracted from the occupation's current wage 
                   </p>
 
-                  <img src="src/sortingLogic.png" alt="" class="page__hero__src page__hero__second">
+                  <img src="src/genderWageLogic.png" alt="" class="page__hero__src page__hero__second">
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        These calculated changes in wage-gap can then be hovered by users by hovering on an occupation name
+                        I then visualized these changes by displaying circles adjacent to each occupation that when hovered would display the change in wage gap over several years. When not hovered, the circles would appear red or green to indicate an increase or decrease in wage gaps respectively
                   </p>
 
             <div class="page__section">
@@ -260,16 +260,16 @@
                   </h3>
 
                   <p class="page__section__mainText page__section__mainText__second ">
-                        This project more reflected on my software architecture skills more than my design skills. However, from seeing my previous graph and this graph, I am glad to see improvements in both design and software development. 
+                        This project more reflected on my software architecture and development skills more than my visual design skills. But from observing the differences between this visualization and my earier one, it is evident that there are improvements in both design and functionality. Completion of this iteration of the graph gave me a new outlook on how to design complex visualizations.
                   </p>
 
                   
 
-            </div> -->
+            </div>
 
             <a href = "index.html#secP"class="page__back">
                   back to portfolio        
-            </a> -->
+            </a> 
       </section>
 </body>
 </html>
