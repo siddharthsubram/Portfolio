@@ -11,7 +11,7 @@
       margin-top: 5vh;
 
       &--element {
-            width: 70%;
+            width: 75%;
             position: relative;
             //margin: 20px 30px;
             margin-top: 1rem;
@@ -19,29 +19,32 @@
             transition: all 0.5s;
 
             @media (max-width: 1300px) {
-                  width: 75%;
-                  &:hover {
-                        width: 80%;
-                  }
+                  // width: 80%;
+                  // &:hover {
+                  //       width: 85%;
+                  // }
             }
 
             @media (max-width: 1000px) {
                   width: 85%;
-                  &:hover {
-                        width: 90%;
-                  }
+                  // &:hover {
+                  //       width: 90%;
+                  // }
             }
 
             @media (max-width: 600px) {
                   width: 90%;
+            }
+
+            @media (min-width: 1000px) {
                   &:hover {
-                        width: 95%;
+                        width: 77%;
                   }
             }
 
             &:hover {
                   cursor: pointer;
-                  width: 73%;
+
                   & > .accordian--element--front {
                         background-color: $color--lightGrey;
                   }

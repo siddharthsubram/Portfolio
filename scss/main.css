@@ -101,11 +101,8 @@ html {
 .redButton:hover {
   font-size: 1.15rem;
   letter-spacing: 0.1rem;
-  width: 17%;
   color: white;
   background-color: #952e4b;
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
 }
 
 @media (max-width: 1400px) {
@@ -1192,7 +1189,7 @@ html {
 }
 
 .accordian--element {
-  width: 70%;
+  width: 75%;
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1200,21 +1197,9 @@ html {
   transition: all 0.5s;
 }
 
-@media (max-width: 1300px) {
-  .accordian--element {
-    width: 75%;
-  }
-  .accordian--element:hover {
-    width: 80%;
-  }
-}
-
 @media (max-width: 1000px) {
   .accordian--element {
     width: 85%;
-  }
-  .accordian--element:hover {
-    width: 90%;
   }
 }
 
@@ -1222,14 +1207,16 @@ html {
   .accordian--element {
     width: 90%;
   }
+}
+
+@media (min-width: 1000px) {
   .accordian--element:hover {
-    width: 95%;
+    width: 77%;
   }
 }
 
 .accordian--element:hover {
   cursor: pointer;
-  width: 73%;
 }
 
 .accordian--element:hover > .accordian--element--front {
