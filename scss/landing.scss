@@ -122,12 +122,12 @@
                         //border: 1px solid black;
                         padding-top: 0.5rem;
                         // font-size: 1.5rem;
-                        font-size: 1.5rem;
+                        font-size: 1.6rem;
                         text-align: center;
                         text-transform: uppercase;
                         margin-right: 0.75rem;
                         @media (max-width: $tablet) {
-                              font-size: 1rem;
+                              font-size: 1.1rem;
                               padding: 1rem;
                         }
                         &--1 {
@@ -136,17 +136,17 @@
                               transition: all 0.5s;
                               padding: 0rem;
 
-                              &:hover {
-                                    font-size: 1.75rem;
-                                    font-weight: 600;
-                                    border-bottom: 1px solid $color--blueGreen;
-                              }
+                              // &:hover {
+                              //       font-size: 1.75rem;
+                              //       font-weight: 600;
+                              //       border-bottom: 1px solid $color--blueGreen;
+                              // }
 
-                              @media (max-width: $tablet) {
-                                    &:hover {
-                                          font-size: 1.25rem;
-                                    }
-                              }
+                              // @media (max-width: $tablet) {
+                              //       &:hover {
+                              //             font-size: 1.25rem;
+                              //       }
+                              // }
                         }
                         &--2 {
                               //font-size: 1.5rem;
@@ -154,17 +154,17 @@
                               color: $color--redPurple;
                               transition: all 0.5s;
                               padding: 0rem;
-                              &:hover {
-                                    font-size: 1.75rem;
-                                    font-weight: 600;
-                                    border-bottom: 1px solid $color--redPurple;
-                              }
+                              // &:hover {
+                              //       font-size: 1.75rem;
+                              //       font-weight: 600;
+                              //       border-bottom: 1px solid $color--redPurple;
+                              // }
 
-                              @media (max-width: $tablet) {
-                                    &:hover {
-                                          font-size: 1.25rem;
-                                    }
-                              }
+                              // @media (max-width: $tablet) {
+                              //       &:hover {
+                              //             font-size: 1.25rem;
+                              //       }
+                              // }
                         }
                         &--3 {
                               //font-size: 1.5rem;
@@ -172,34 +172,34 @@
                               color: $color--yellowOrange;
                               transition: all 0.5s;
                               padding: 0rem;
-                              &:hover {
-                                    font-size: 1.75rem;
-                                    font-weight: 600;
-                                    border-bottom: 1px solid
-                                          $color--yellowOrange;
-                              }
+                              // &:hover {
+                              //       font-size: 1.75rem;
+                              //       font-weight: 600;
+                              //       border-bottom: 1px solid
+                              //             $color--yellowOrange;
+                              // }
 
-                              @media (max-width: $tablet) {
-                                    &:hover {
-                                          font-size: 1.25rem;
-                                    }
-                              }
+                              // @media (max-width: $tablet) {
+                              //       &:hover {
+                              //             font-size: 1.25rem;
+                              //       }
+                              // }
                         }
                         &--4 {
                               color: $color--redPurple;
                               transition: all 0.5s;
                               padding: 0rem;
-                              &:hover {
-                                    font-size: 1.75em;
-                                    font-weight: 600;
-                                    border-bottom: 1px solid $color--fadedGreen;
-                              }
+                              // &:hover {
+                              //       font-size: 1.75em;
+                              //       font-weight: 600;
+                              //       border-bottom: 1px solid $color--fadedGreen;
+                              // }
 
-                              @media (max-width: $tablet) {
-                                    &:hover {
-                                          font-size: 1.25rem;
-                                    }
-                              }
+                              // @media (max-width: $tablet) {
+                              //       &:hover {
+                              //             font-size: 1.25rem;
+                              //       }
+                              // }
                         }
                   }
 
