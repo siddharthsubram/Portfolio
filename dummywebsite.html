@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="random.css">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    var File = function(url, object){
+      File.list = Array.isArray(File.list)? File.list : [];
+      File.progress = File.progress || 0;
+      this.progress = 0;
+      this.object = object;
+      this.url = url;
+    };
+
+    File.indexOf = function(term){
+      for(var index in File.list){
+        var file = File.list[index];
+        if (file.equals(term) || file.url === term || file.object === term) {
+          return index;
+        }
+      }
+      return -1;
+    };
+
+    File.find = function(term){
+      var index = File.indexOf(term);
+      return ~index && File.list[index];
+    };
+
+    File.prototype.equals = function(file){
+      var isFileType = file instanceof File;
+      return isFileType && this.url === file.url && this.object === file.object;
+    };
+
+    var tempArr = Array(40).fill().map(() => Math.round(Math.random() * 40))
+    console.log(tempArr);
+
+    sorted =  1; 
+    for (i = 1 ; i < tempArr.length ; i++){
+      console.log(tempArr[i]);
+      if (tempArr[i] < tempArr[i-1]){
+        sorted = 0; 
+        break;
+      }
+    }
+
+    while (sorted == 0){
+      for (i = 0 ; i < tempArr.length - 1; i++){
+        if (tempArr[i] > tempArr[i+1]){
+          c = tempArr[i];
+          tempArr[i] = tempArr[i+1];
+          tempArr[i+1] = c; 
+        }
+      }
+
+      isSorted = 1; 
+      for (i = 1 ; i < tempArr.length ; i++){
+        if (tempArr[i]  < tempArr[i-1]){
+          isSorted = 0; 
+          break; 
+        }
+      }
+
+      if (isSorted == 1){
+        sorted = 1; 
+      }
+    }
+
+    File.prototype.save = function(update){
+      update = typeof update === 'undefined'? true : update; 
+      if(Array.isArray(File.list)){
+        var index = File.indexOf(this);
+        if(~index && update) {
+          File.list[index] = this; 
+          console.warn('File `%s` has been loaded before and updated now for: %O.', this.url, this);
+        }else File.list.push(this);
+        console.log(File.list)
+      }else{
+        File.list = [this];
+      }
+      return this;
+    };
+   
+    
+  </script>
+  
+  
+</body>
+</html>
